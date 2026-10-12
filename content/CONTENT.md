@@ -147,7 +147,7 @@ After a stint as a professional mover my work transformed in size and materials.
 - **Nailed** — Stone and nails | 48 x 40 x 26"
   ![nailed](../images/nailed.jpg)
 - **Mr. Potato Head** — Stone and nails | 15 x 10 x 6"
-  ![mr-potato-head](../images/mr-potato-head.jpg) ![mr-potato-head-detail](../images/mr-potato-head-detail.jpg)
+  ![mr-potato-head](../images/mr-potato-head.jpg)
 - **Trinity: The Father** — Wood, nails, hair | 6' x 6' x 4"
   ![trinity-the-father](../images/trinity-the-father.jpg)
 - **Trinity: The Son** — Wood, staples, plexiglass mirror, hair | 6' x 6' x 3"

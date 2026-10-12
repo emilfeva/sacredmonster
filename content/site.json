@@ -248,10 +248,7 @@
               "title": "Mr. Potato Head",
               "details": "Stone and nails | 15 x 10 x 6\"",
               "image": "mr-potato-head",
-              "wix_detail_page": "mr-potato-head",
-              "detail_images": [
-                "mr-potato-head-detail"
-              ]
+              "wix_detail_page": "mr-potato-head"
             },
             {
               "title": "Trinity: The Father",
@@ -538,12 +535,6 @@
       "width": 1887,
       "height": 2400,
       "wix_original": "https://static.wixstatic.com/media/04a26e_a687cc77d096408eb3cb138cc12159af~mv2.jpg"
-    },
-    "mr-potato-head-detail": {
-      "file": "images/mr-potato-head-detail.jpg",
-      "width": 1888,
-      "height": 2400,
-      "wix_original": "https://static.wixstatic.com/media/04a26e_ede01d6bc7be44b4839d4fb50361c9ae~mv2.jpg"
     },
     "trinity-the-father": {
       "file": "images/trinity-the-father.jpg",
