@@ -147,6 +147,7 @@ function portfolio() {
     </div>
   </section>`).join('\n  ')}
   <nav class="page-nav">${p.links.map(l => link(l, '', 'button button-blue')).join(' ')}</nav>
+  ${p.press ? `<p class="press">${esc(p.press)}</p>` : ''}
 </main>`,
   });
 }

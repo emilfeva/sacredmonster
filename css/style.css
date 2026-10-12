@@ -152,6 +152,8 @@ body.home { background: var(--ink); color: var(--paper); }
 .work figcaption { margin-top: 4px; font-size: 14px; line-height: 1.25; }
 .work figcaption span { display: block; }
 
+.press { margin: 48px 0 0; font-size: 14px; }
+
 /* Work detail pages */
 
 .work-page { text-align: center; }
