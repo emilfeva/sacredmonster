@@ -1,0 +1,647 @@
+{
+  "source": "https://dreadedhitter-3w.wixsite.com/my-site-4 (?rc=test-site preview)",
+  "artist": "Szaja Gottlieb",
+  "design": {
+    "fonts": [
+      "Cormorant Garamond (semibold for body/captions/headings; italic for the quote and dedication)"
+    ],
+    "home_page": "black background, white text, 'ENTER' link in red rgb(205,26,26) with a chevron",
+    "other_pages": "white background, black text",
+    "buttons": "solid black or solid blue rectangles with white sans-serif label",
+    "portfolio_heading": "'PORTFOLIO' in white on a black box"
+  },
+  "navigation": "No menu. Linear flow: Home -ENTER-> Sacred Monster -'The Story'-> The Story -'Portfolio'-> Portfolio -'Sacred Monster'-> Sacred Monster. Each portfolio thumbnail opens a single-image page for that work.",
+  "pages": [
+    {
+      "id": "home",
+      "wix_slug": "",
+      "wix_title": "HOME",
+      "heading": "SZAJA GOTTLIEB",
+      "image": "abraxas-landing",
+      "caption": [
+        "Abraxas",
+        "Artefactotem series/1992"
+      ],
+      "links": [
+        {
+          "text": "ENTER",
+          "to": "sacred-monster"
+        }
+      ]
+    },
+    {
+      "id": "sacred-monster",
+      "wix_slug": "sacred-monster-sacred-beast",
+      "wix_title": "Sacred Monster Sacred Beast",
+      "heading": "SACRED MONSTER (MONSTRE SACRÉ) 1992-2026",
+      "subheading": "\"A conceptual piece made by a primitive\"",
+      "main_image": "sacred-monster",
+      "facts": [
+        "Black Virginia Soapstone",
+        "3.25\" steel masonry nails",
+        "Dimensions: 56\" × 26\" × 10\"",
+        "Estimated weight: 1,200 lbs"
+      ],
+      "secondary_images": {
+        "left": [
+          "sacred-monster-nails-top",
+          "sacred-monster-nails-side"
+        ],
+        "right": [
+          "sacred-monster-nail-heads",
+          "sacred-monster-garden"
+        ]
+      },
+      "links": [
+        {
+          "text": "The Story",
+          "to": "story"
+        }
+      ]
+    },
+    {
+      "id": "story",
+      "wix_slug": "about-4-1",
+      "wix_title": "History",
+      "photos": [
+        {
+          "image": "story-ventura-2017",
+          "caption": "Ventura, 2017"
+        },
+        {
+          "image": "story-cayucos-2017",
+          "caption": "Cayucos, 2017"
+        },
+        {
+          "image": "story-cayucos-2025-09",
+          "caption": "Cayucos, September 2025"
+        },
+        {
+          "image": "story-cayucos-2025-12",
+          "caption": "Cayucos, December 2025"
+        },
+        {
+          "image": "story-cayucos-2026-06",
+          "caption": "Cayucos, June 2026"
+        },
+        {
+          "image": "story-san-luis-obispo-2026-07",
+          "caption": "San Luis Obispo, July 2026"
+        }
+      ],
+      "heading": "The Story of Sacred Monster",
+      "paragraphs": [
+        "The Cosmic Joke: a stone of more than a thousand pounds that cannot be touched and must be moved.",
+        "In 1992 I set out to make a stone sculpture that could not be touched. The inspiration was the Kongo nkisi nkondi, power figures driven with nails. The title was Untouchable You.",
+        "Once finished, it became a logistical challenge. It was damaged in 1995 when it was moved from Art City to StoneWorks, Michelle Chapin's studio. In December 1998 a fire at Art City destroyed all my stored work. Safe at StoneWorks, Untouchable You was the sole survivor.",
+        "There it sat until 2017, when the sculpture yard was reorganized and I was asked to remove it. With neither the means to move it nor a place to put it, I turned to a client, Norm Fawley, who provided a truck and space at his ranch in Cayucos.",
+        "Eight years later, with Norm in failing health, I had to decide whether to finish the piece or abandon it. I repaired the damage, reinstalling the original nails and, unexpectedly, adding many thousands more. Absorbed again in its demands, I let the piece dictate a different path: from untouchability to survivorship, from prohibition to indifference.",
+        "Hence the new title: Sacred Monster, or Monstre Sacré. In French culture, a monstre sacré is a figure of such stature that ordinary rules no longer apply. The sculpture had earned the name. It survived what destroyed everything else and requires its own terms, including a hand truck special-ordered for its body: the Dutro Brute, rated at 1,600 lbs, which will accompany Sacred Monster for its lifetime. In June 2026 it was moved without incident by a crew wearing Sacred Monster T-shirts. The move is on video."
+      ],
+      "dedication": "Dedicated to Norm Fawley (1942–2025), a monstre sacré in his own right, without whose generosity it would not have been finished.",
+      "links": [
+        {
+          "text": "Portfolio",
+          "to": "portfolio"
+        }
+      ],
+      "notes": [
+        "Wix has a stray 'Cayucos, 2017' text box overlapping the June 2026 photo; omitted here."
+      ]
+    },
+    {
+      "id": "portfolio",
+      "wix_slug": "portfolio-history",
+      "wix_title": "Portfolio",
+      "heading": "PORTFOLIO",
+      "links": [
+        {
+          "text": "Sacred Monster",
+          "to": "sacred-monster"
+        }
+      ],
+      "series": [
+        {
+          "title": "LYRICAL (ENTHIOS STUDIO)",
+          "years": "1978–1980",
+          "description": "This period marks the beginnings of my explorations as a stone sculptor. The materials were alabaster and the subject matter is traditionally focused on the lyrical line, whether representational or abstract.",
+          "works": [
+            {
+              "title": "Fear and Wonder",
+              "details": "Alabaster | 12 x 8 x 6\"",
+              "image": "fear-and-wonder",
+              "wix_detail_page": "face",
+              "collection": "Private Collection"
+            },
+            {
+              "title": "Mask",
+              "details": "Alabaster | 12 x 8 x 6\"",
+              "image": "mask",
+              "wix_detail_page": "seashell"
+            },
+            {
+              "title": "The Calling",
+              "details": "Alabaster | 30 x 20 x 14\"",
+              "image": "the-calling",
+              "wix_detail_page": "brass-knuckles"
+            },
+            {
+              "title": "Sacral Vision",
+              "details": "Onyx | 16 x 15 x 5\"",
+              "image": "sacral-vision",
+              "wix_detail_page": "tape-measure"
+            },
+            {
+              "title": "Fertility Rite",
+              "details": "Alabaster | 24 x 10 x 8\"",
+              "image": "fertility-rite",
+              "wix_detail_page": "fertility-rite"
+            },
+            {
+              "title": "Torso",
+              "details": "Alabaster | 24 x 10 x 14\"",
+              "image": "torso",
+              "wix_detail_page": "torso",
+              "collection": "Private Collection"
+            },
+            {
+              "title": "Moonstone",
+              "details": "Alabaster | 9 x 16 x 4'",
+              "image": "moonstone",
+              "wix_detail_page": "moonstone",
+              "note": "Wix shows 4' (feet); likely meant 4\" (inches)."
+            },
+            {
+              "title": "DreamShell",
+              "details": "Alabaster | 17 x 4 x 4\"",
+              "image": "dreamshell",
+              "wix_detail_page": "dreamshell",
+              "collection": "Private Collection"
+            }
+          ]
+        },
+        {
+          "title": "ICEHOUSE ABSTRACT GEOMETRIC",
+          "years": "1980-1984",
+          "description": "This period represents an abandonment of the lyrical in favor of the hard geometric edge unusual in stone sculpture and an engagement with the stone as material especially the color and patterns that alabaster offers.",
+          "works": [
+            {
+              "title": "Cowrie",
+              "details": "Alabaster | 6 x 17 x 7\"",
+              "image": "cowrie",
+              "wix_detail_page": "cowrie-shell",
+              "collection": "Private Collection"
+            },
+            {
+              "title": "Cross My Heart",
+              "details": "Alabaster | 21 x 20 x 7\"",
+              "image": "cross-my-heart",
+              "wix_detail_page": "cross-my-heart"
+            },
+            {
+              "title": "Outpouring",
+              "details": "Alabaster | 17 x 4.5 x 20\"",
+              "image": "outpouring",
+              "wix_detail_page": "outpouring"
+            },
+            {
+              "title": "Cairn",
+              "details": "Alabaster | 17 x 18 x 10.5\"",
+              "image": "cairn",
+              "wix_detail_page": "cairn",
+              "collection": "Private Collection"
+            },
+            {
+              "title": null,
+              "details": null,
+              "image": "icehouse-untitled-1",
+              "wix_detail_page": null,
+              "note": "No caption or link on Wix (file Img_011.jpg)."
+            },
+            {
+              "title": null,
+              "details": null,
+              "image": "icehouse-untitled-2",
+              "wix_detail_page": null,
+              "note": "No caption or link on Wix (file Img_012.jpg)."
+            },
+            {
+              "title": null,
+              "details": null,
+              "image": "icehouse-untitled-3",
+              "wix_detail_page": null,
+              "note": "No caption or link on Wix (file IMG_002 copy.jpg)."
+            }
+          ]
+        },
+        {
+          "title": "ARTEFACTOTEM SERIES (STRONG STEEL BUILDING)",
+          "years": "1989-1992",
+          "description": "After a stint as a professional mover my work transformed in size and materials. No longer carving, I approached stone as purely material and added other common materials to explore ideas and symbols.",
+          "works": [
+            {
+              "title": "Nailed",
+              "details": "Stone and nails | 48 x 40 x 26\"",
+              "image": "nailed",
+              "wix_detail_page": "nailed"
+            },
+            {
+              "title": "Mr. Potato Head",
+              "details": "Stone and nails | 15 x 10 x 6\"",
+              "image": "mr-potato-head",
+              "wix_detail_page": "mr-potato-head",
+              "detail_images": [
+                "mr-potato-head-detail"
+              ]
+            },
+            {
+              "title": "Trinity: The Father",
+              "details": "Wood, nails, hair | 6' x 6' x 4\"",
+              "image": "trinity-the-father",
+              "wix_detail_page": "father"
+            },
+            {
+              "title": "Trinity: The Son",
+              "details": "Wood, staples, plexiglass mirror, hair | 6' x 6' x 3\"",
+              "image": "trinity-the-son",
+              "wix_detail_page": "son"
+            },
+            {
+              "title": "Trinity: The Holy Ghost",
+              "details": "Wood, plexiglass mirror, nails | 6' x 6' x 3\"",
+              "image": "trinity-the-holy-ghost",
+              "wix_detail_page": "holy-ghost"
+            },
+            {
+              "title": "CrossHairs",
+              "details": "Wood, hair, charcoal | 6' x 6' x 3\"",
+              "image": "crosshairs",
+              "wix_detail_page": "cross-hairs"
+            },
+            {
+              "title": "Decalogue",
+              "details": "Wood, plexiglass mirror, nails, paint | 44 x 32 x 12\"",
+              "image": "decalogue",
+              "wix_detail_page": "decalogue"
+            },
+            {
+              "title": "Abraxas",
+              "details": "Wood, plexiglass mirror, nails, cloth, bird skeleton & feather, stone, wire | 96\" x 48\" x 24\"",
+              "image": "abraxas",
+              "wix_detail_page": "abraxas"
+            },
+            {
+              "title": "Box of Awe (Closed)",
+              "details": "Pressboard, plexiglass mirror, nails, paint | 10\" x 10\" x 18\"",
+              "image": "box-of-awe-closed",
+              "wix_detail_page": null,
+              "note": "Not linked on Wix."
+            },
+            {
+              "title": "Box of Awe (Open)",
+              "details": "Pressboard, plexiglass mirror, nails, paint | 10\" x 10\" x 18\"",
+              "image": "box-of-awe-open",
+              "wix_detail_page": "box-of-awe",
+              "collection": "Personal Collection",
+              "detail_images": [
+                "box-of-awe-detail"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "MONOPOLYLITH SERIES (STRONG STEEL AND ART CITY)",
+          "years": "1992-1995",
+          "description": "The Monopolylith series represents approaching stone as purely material from the viewpoint of mass, weight, and density. Using previous techniques of nails and wire and using a wooden armature, these works appear weightless and impossible.",
+          "works": [
+            {
+              "title": "Wall",
+              "details": "Sandstone, wood, nails, wire | 10' x 5' x 36\"",
+              "image": "wall",
+              "wix_detail_page": "wall"
+            },
+            {
+              "title": "Tower",
+              "details": "Sandstone, wood, nails, wire | 8' x 2' x 2'",
+              "image": "tower",
+              "wix_detail_page": "tower"
+            },
+            {
+              "title": "Cone",
+              "details": "Sandstone, wood, nails, wire | 52 x 3' x 3'",
+              "image": "cone",
+              "wix_detail_page": "cone"
+            },
+            {
+              "title": "Off the Wall I",
+              "details": "Sandstone, wood, nails, wire | 5' x 18\" x 18\"",
+              "image": "off-the-wall-i",
+              "wix_detail_page": "off-the-wall-ii",
+              "note": "Wix page slug/title says 'Off The Wall II' but the image file is 'OffTheWallOne'."
+            },
+            {
+              "title": "Off the Wall II",
+              "details": "Stone, wood, nails, wire | 5' x 4' x 18\"",
+              "image": "off-the-wall-ii",
+              "wix_detail_page": "off-the-wall",
+              "note": "Wix page title says 'Off The Wall'."
+            },
+            {
+              "title": "Installation of Wall (at Art City)",
+              "details": "Stone, wood, nails, wire | 10' x 5' x 3'",
+              "image": "wall-installation-art-city",
+              "wix_detail_page": "column",
+              "note": "Wix page title says 'Column'."
+            },
+            {
+              "title": "Installation of Wall (at Art City, Ventura)",
+              "details": "Stone, wood, nails, wire | 10' x 5' x 3'",
+              "image": "wall-installation-art-city-ventura",
+              "wix_detail_page": "about-7",
+              "note": "Wix page title says 'ShyOnTop'."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "work_detail_pages": "On Wix each linked work has its own page with the image large and a black 'Back' button (only 'Fear and Wonder' also shows the title). The Back buttons are chained to the previous work's page rather than the portfolio, which looks unintentional.",
+  "images": {
+    "abraxas-landing": {
+      "file": "images/abraxas-landing.jpg",
+      "width": 1842,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_23cd48a735c449b3921b4a40ca0b0b8a~mv2.jpg"
+    },
+    "sacred-monster": {
+      "file": "images/sacred-monster.jpg",
+      "width": 1299,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_fd81de7a178d4dc4a3bd01f48e511668~mv2.jpg"
+    },
+    "sacred-monster-nails-top": {
+      "file": "images/sacred-monster-nails-top.jpg",
+      "width": 1956,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_9ee0374d8d394e3e801bcbc885f002f4~mv2.jpg"
+    },
+    "sacred-monster-nail-heads": {
+      "file": "images/sacred-monster-nail-heads.jpg",
+      "width": 2400,
+      "height": 2068,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_27e9cedf36da44b08819ce6fc4da8a9f~mv2.jpg"
+    },
+    "sacred-monster-nails-side": {
+      "file": "images/sacred-monster-nails-side.jpg",
+      "width": 1800,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_e55298929ab2434a8a8eb8e526a59478~mv2.jpeg"
+    },
+    "sacred-monster-garden": {
+      "file": "images/sacred-monster-garden.jpg",
+      "width": 1800,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_ca088cd9a087486b98ba3a846bfdc2d0~mv2.jpg"
+    },
+    "story-ventura-2017": {
+      "file": "images/story-ventura-2017.jpg",
+      "width": 1800,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_cb336653eb434bae9e09ee1496015ac7~mv2.jpg"
+    },
+    "story-cayucos-2017": {
+      "file": "images/story-cayucos-2017.jpg",
+      "width": 1800,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_4bfd32e1b6d5499b910bd34ec3022f90~mv2.jpg"
+    },
+    "story-cayucos-2025-09": {
+      "file": "images/story-cayucos-2025-09.jpg",
+      "width": 1800,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_f4a43dbcf11541a18340504b172c920a~mv2.jpeg"
+    },
+    "story-cayucos-2025-12": {
+      "file": "images/story-cayucos-2025-12.jpg",
+      "width": 1800,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_c73004036da74dbe9d0a905c613fb63f~mv2.jpeg"
+    },
+    "story-cayucos-2026-06": {
+      "file": "images/story-cayucos-2026-06.jpg",
+      "width": 1800,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_d0252b40d3fd49a7a4c4c06396711d23~mv2.jpeg"
+    },
+    "story-san-luis-obispo-2026-07": {
+      "file": "images/story-san-luis-obispo-2026-07.jpg",
+      "width": 1800,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_ba96518c74434f89bc833198c5215604~mv2.jpeg"
+    },
+    "fear-and-wonder": {
+      "file": "images/fear-and-wonder.jpg",
+      "width": 1945,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_b6d289bb5abf4f50848faad25435c3de~mv2.jpg"
+    },
+    "mask": {
+      "file": "images/mask.jpg",
+      "width": 1927,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_1c638aa6bd97482bbce7bac669fd5a66~mv2.jpg"
+    },
+    "the-calling": {
+      "file": "images/the-calling.jpg",
+      "width": 1714,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_a7fe6ade0eed436d853f238d9182203b~mv2.jpg"
+    },
+    "sacral-vision": {
+      "file": "images/sacral-vision.jpg",
+      "width": 2400,
+      "height": 1902,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_878a1ac1d5a24767b656d716109956f8~mv2.jpg"
+    },
+    "fertility-rite": {
+      "file": "images/fertility-rite.jpg",
+      "width": 1605,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_b82e958ff34c48caaf1a0999470f2ab3~mv2.jpg"
+    },
+    "torso": {
+      "file": "images/torso.jpg",
+      "width": 1940,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_3ff9965f98d245ba8b544ad9c9324f99~mv2.jpg"
+    },
+    "moonstone": {
+      "file": "images/moonstone.jpg",
+      "width": 2400,
+      "height": 1911,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_30cc2472a880413c93751dae9b8fe1d8~mv2.jpg"
+    },
+    "dreamshell": {
+      "file": "images/dreamshell.jpg",
+      "width": 2400,
+      "height": 1600,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_a4ff0d560f984e228e60c512b4bff930~mv2.jpg"
+    },
+    "cowrie": {
+      "file": "images/cowrie.jpg",
+      "width": 2009,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_89001e2700fe4583839a61f966c6becc~mv2.jpg"
+    },
+    "cross-my-heart": {
+      "file": "images/cross-my-heart.jpg",
+      "width": 1970,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_fd3e2c8859a345b7bea4d26d934598f2~mv2.jpg"
+    },
+    "outpouring": {
+      "file": "images/outpouring.jpg",
+      "width": 1879,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_f3aa5a6ad6214903b9016833bf5e4d35~mv2.jpg"
+    },
+    "cairn": {
+      "file": "images/cairn.jpg",
+      "width": 2400,
+      "height": 1600,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_92e695fdcff946679acac6923cdfc4c7~mv2.jpg"
+    },
+    "icehouse-untitled-1": {
+      "file": "images/icehouse-untitled-1.jpg",
+      "width": 1916,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_ebc49cba794446be8dbb0c32195cf995~mv2.jpg"
+    },
+    "icehouse-untitled-2": {
+      "file": "images/icehouse-untitled-2.jpg",
+      "width": 2400,
+      "height": 1896,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_1daf02a9ad4540ed9efe7ff8b5a6494a~mv2.jpg"
+    },
+    "icehouse-untitled-3": {
+      "file": "images/icehouse-untitled-3.jpg",
+      "width": 1600,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_f2ae504721534dd2baeb7ded89c22916~mv2.jpg"
+    },
+    "nailed": {
+      "file": "images/nailed.jpg",
+      "width": 1888,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_a7ae961e63f84d1fbbb4539779517fb3~mv2.jpg"
+    },
+    "mr-potato-head": {
+      "file": "images/mr-potato-head.jpg",
+      "width": 1887,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_a687cc77d096408eb3cb138cc12159af~mv2.jpg"
+    },
+    "mr-potato-head-detail": {
+      "file": "images/mr-potato-head-detail.jpg",
+      "width": 1888,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_ede01d6bc7be44b4839d4fb50361c9ae~mv2.jpg"
+    },
+    "trinity-the-father": {
+      "file": "images/trinity-the-father.jpg",
+      "width": 1893,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_6a207983dbd94fe3908376e2fc24f097~mv2.jpg"
+    },
+    "trinity-the-son": {
+      "file": "images/trinity-the-son.jpg",
+      "width": 1897,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_226b480345cc43938db989552f0be50b~mv2.jpg"
+    },
+    "trinity-the-holy-ghost": {
+      "file": "images/trinity-the-holy-ghost.jpg",
+      "width": 1917,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_6acc3b15aef246949c6e93e036baacb0~mv2.jpg"
+    },
+    "crosshairs": {
+      "file": "images/crosshairs.jpg",
+      "width": 1929,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_58ed4047108d45538055cbfb01963b45~mv2.jpg"
+    },
+    "decalogue": {
+      "file": "images/decalogue.jpg",
+      "width": 1610,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_6dfe31c053e84d4c8221551743611be3~mv2.jpg"
+    },
+    "abraxas": {
+      "file": "images/abraxas.jpg",
+      "width": 1842,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_5d1ff154183947a194a807d15801fd64~mv2.jpg"
+    },
+    "box-of-awe-closed": {
+      "file": "images/box-of-awe-closed.jpg",
+      "width": 1080,
+      "height": 879,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_95a72dff8c4440d5b2567454d68c892a~mv2.jpeg"
+    },
+    "box-of-awe-open": {
+      "file": "images/box-of-awe-open.jpg",
+      "width": 2400,
+      "height": 1905,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_2e572d1a7f5449728c85e7ac5256f24c~mv2.jpg"
+    },
+    "box-of-awe-detail": {
+      "file": "images/box-of-awe-detail.jpg",
+      "width": 1954,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_b3a20c35d1ab4fcfae8d4901914f183a~mv2.jpg"
+    },
+    "wall": {
+      "file": "images/wall.jpg",
+      "width": 1873,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_1c5f9b321603469eb8f3f8ee22dbb62b~mv2.jpg"
+    },
+    "tower": {
+      "file": "images/tower.jpg",
+      "width": 1945,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_d1f7c529f66c41e284c8d91d0d6620be~mv2.jpg"
+    },
+    "cone": {
+      "file": "images/cone.jpg",
+      "width": 1912,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_3df75da6605f4589af600af905453a6d~mv2.jpg"
+    },
+    "off-the-wall-i": {
+      "file": "images/off-the-wall-i.jpg",
+      "width": 1912,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_36c659afd6bb4e1aa07e7aa02811b78e~mv2.jpg"
+    },
+    "off-the-wall-ii": {
+      "file": "images/off-the-wall-ii.jpg",
+      "width": 1893,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_777206fcaa2a4fb09533f737ab67bc19~mv2.jpg"
+    },
+    "wall-installation-art-city": {
+      "file": "images/wall-installation-art-city.jpg",
+      "width": 1924,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_2917aadd1a0d4b0eadb4a8e4ecfc9074~mv2.jpg"
+    },
+    "wall-installation-art-city-ventura": {
+      "file": "images/wall-installation-art-city-ventura.jpg",
+      "width": 519,
+      "height": 641,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_5e6c3b846a674da0b8ff9ac280b314db~mv2.jpg"
+    }
+  }
+}
