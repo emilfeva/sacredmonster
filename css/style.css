@@ -1,0 +1,189 @@
+/* Szaja Gottlieb — site styles */
+
+:root {
+  --serif: "Cormorant Garamond", Garamond, "Times New Roman", serif;
+  --sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --ink: #000;
+  --paper: #fff;
+  --red: rgb(205, 26, 26);
+  --blue: #0057e1;
+  --content: 980px;
+  --gutter: 16px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+img { display: block; max-width: 100%; height: auto; }
+
+.nowrap { white-space: nowrap; }
+
+figure { margin: 0; }
+
+h1, h2 { font-weight: 600; line-height: 1.15; margin: 0; }
+
+main {
+  max-width: var(--content);
+  margin: 0 auto;
+  padding: 48px var(--gutter) 64px;
+}
+
+/* Buttons */
+
+.button {
+  display: inline-block;
+  min-width: 142px;
+  padding: 10px 28px;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--sans);
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-decoration: none;
+}
+.button:hover, .button:focus-visible { opacity: 0.8; }
+.button-blue { background: var(--blue); font-size: 14px; }
+
+.page-nav { margin-top: 56px; text-align: right; }
+
+/* Home */
+
+body.home { background: var(--ink); color: var(--paper); }
+
+.landing { text-align: center; padding-top: 24px; }
+
+.artist-name {
+  font-size: clamp(30px, 6vw, 60px);
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  margin-right: -0.3em; /* balance trailing letter-spacing */
+  margin-bottom: 56px;
+}
+
+.landing figure img { width: min(491px, 100%); margin: 0 auto; }
+
+.landing figcaption { margin-top: 12px; font-size: 22px; line-height: 1.4; }
+
+.enter {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+  color: var(--red);
+  font-size: 27px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.enter::after {
+  content: "";
+  width: 11px;
+  height: 11px;
+  border: solid var(--paper);
+  border-width: 3px 3px 0 0;
+  transform: rotate(45deg);
+}
+.enter:hover, .enter:focus-visible { text-decoration: underline; }
+
+/* Sacred Monster */
+
+.page-header { text-align: center; margin-bottom: 40px; }
+.page-header h1 { font-size: clamp(26px, 4vw, 46px); }
+.quote { font-size: clamp(20px, 2.5vw, 28px); font-style: italic; font-weight: 400; margin: 20px 0 0; }
+
+.sm-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.45fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+.sm-side { display: grid; gap: 80px; }
+.sm-left { padding-top: 28px; }
+.sm-right { padding-top: 50px; }
+.sm-right figure:first-child { width: 70%; }
+
+.facts { margin: 12px 0 0; padding-left: 1.2em; font-size: 17px; }
+
+/* Story */
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px 80px;
+  align-items: end;
+}
+.photo-grid img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; }
+.photo-grid figcaption { margin-top: 4px; font-size: 15px; }
+
+.story-text { max-width: 900px; margin: 48px auto 0; font-size: 21px; }
+.story-text h1 { font-size: clamp(30px, 4vw, 42px); text-align: center; margin-bottom: 16px; }
+.story-text p { margin: 0; }
+.story-text .dedication { font-size: 19px; font-style: italic; margin-top: 4px; }
+
+/* Portfolio */
+
+.portfolio-title {
+  width: fit-content;
+  margin: 0 auto 64px;
+  padding: 2px 8px;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: clamp(40px, 6vw, 60px);
+  font-weight: 400;
+}
+
+.series + .series { margin-top: 96px; }
+.series h2 { font-size: clamp(22px, 3vw, 28px); font-weight: 500; }
+.years { margin: 4px 0 0; font-size: 16px; }
+.series-description { margin: 10px 0 24px; font-size: 19px; }
+
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 36px 28px;
+  align-items: start;
+}
+/* Fixed-height image box, bottom-aligned, so captions in a row line up. */
+.work > a, .work > img { display: flex; align-items: flex-end; height: 210px; }
+.work img { max-height: 210px; width: auto; }
+.work a:hover img, .work a:focus-visible img { opacity: 0.85; }
+.work figcaption { margin-top: 4px; font-size: 14px; line-height: 1.25; }
+.work figcaption span { display: block; }
+
+/* Work detail pages */
+
+.work-page { text-align: center; }
+.work-page h1 { font-size: 30px; margin-bottom: 12px; }
+.work-images { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; }
+.work-images img { max-height: 600px; width: auto; }
+.work-images:has(> a + a) img { max-height: 440px; }
+.work-details { font-size: 17px; margin: 12px 0 0; }
+.work-nav { margin-top: 20px; }
+
+/* Narrow screens */
+
+@media (max-width: 760px) {
+  main { padding-top: 32px; }
+  .artist-name { letter-spacing: 0.18em; margin-right: -0.18em; margin-bottom: 32px; }
+  .sm-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+  .sm-main { grid-column: 1 / -1; order: -1; }
+  .sm-side, .sm-left, .sm-right { gap: 16px; padding-top: 0; }
+  .sm-right figure:first-child { width: 100%; }
+  .photo-grid { grid-template-columns: repeat(2, 1fr); gap: 24px 16px; }
+  .story-text { font-size: 19px; }
+  .story-text p + p { margin-top: 0.6em; }
+  .works-grid { grid-template-columns: repeat(2, 1fr); gap: 28px 16px; }
+  .work > a, .work > img { height: auto; }
+  .work img { max-height: none; width: 100%; }
+  .page-nav { text-align: center; }
+}
