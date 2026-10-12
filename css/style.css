@@ -35,6 +35,13 @@ figure { margin: 0; }
 
 h1, h2 { font-weight: 600; line-height: 1.15; margin: 0; }
 
+/* One page-heading style for every page. */
+h1 {
+  font-size: clamp(28px, 4vw, 42px);
+  text-align: center;
+  margin-bottom: 24px;
+}
+
 main {
   max-width: var(--content);
   margin: 0 auto;
@@ -66,14 +73,6 @@ body.home { background: var(--ink); color: var(--paper); }
 
 .landing { text-align: center; padding-top: 24px; }
 
-.artist-name {
-  font-size: clamp(30px, 6vw, 60px);
-  font-weight: 600;
-  letter-spacing: 0.3em;
-  margin-right: -0.3em; /* balance trailing letter-spacing */
-  margin-bottom: 56px;
-}
-
 .landing figure img { width: min(491px, 100%); margin: 0 auto; }
 
 .landing figcaption { margin-top: 12px; font-size: 22px; line-height: 1.4; }
@@ -101,7 +100,7 @@ body.home { background: var(--ink); color: var(--paper); }
 /* Sacred Monster */
 
 .page-header { text-align: center; margin-bottom: 40px; }
-.page-header h1 { font-size: clamp(26px, 4vw, 46px); }
+.page-header h1 { margin-bottom: 0; }
 .quote { font-size: clamp(20px, 2.5vw, 28px); font-style: italic; font-weight: 400; margin: 20px 0 0; }
 
 .sm-grid {
@@ -129,22 +128,12 @@ body.home { background: var(--ink); color: var(--paper); }
 .photo-grid figcaption { margin-top: 4px; font-size: 15px; }
 
 .story-text { max-width: 900px; margin: 48px auto 0; font-size: 21px; }
-.story-text h1 { font-size: clamp(30px, 4vw, 42px); text-align: center; margin-bottom: 16px; }
 .story-text p { margin: 0; }
 .story-text .dedication { font-size: 19px; font-style: italic; margin-top: 4px; }
 
 /* Portfolio */
 
-.portfolio-title {
-  width: fit-content;
-  margin: 0 auto 64px;
-  padding: 2px 8px;
-  background: var(--ink);
-  color: var(--paper);
-  font-size: clamp(40px, 6vw, 60px);
-  font-weight: 400;
-}
-
+.portfolio h1 { margin-bottom: 48px; }
 .series + .series { margin-top: 96px; }
 .series h2 { font-size: clamp(22px, 3vw, 28px); font-weight: 500; }
 .years { margin: 4px 0 0; font-size: 16px; }
@@ -166,7 +155,6 @@ body.home { background: var(--ink); color: var(--paper); }
 /* Work detail pages */
 
 .work-page { text-align: center; }
-.work-page h1 { font-size: 30px; margin-bottom: 12px; }
 .work-images { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; }
 .work-images img { max-height: 600px; width: auto; }
 .work-images:has(> a + a) img { max-height: 440px; }
@@ -177,7 +165,6 @@ body.home { background: var(--ink); color: var(--paper); }
 
 @media (max-width: 760px) {
   main { padding-top: 32px; }
-  .artist-name { letter-spacing: 0.18em; margin-right: -0.18em; margin-bottom: 32px; }
   .sm-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
   .sm-main { grid-column: 1 / -1; order: -1; }
   .sm-side, .sm-left, .sm-right { gap: 16px; padding-top: 0; }

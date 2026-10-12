@@ -61,7 +61,7 @@ function home() {
   return layout({
     title: TITLE, bodyClass: 'home',
     body: `<main class="landing">
-  <h1 class="artist-name">${esc(p.heading)}</h1>
+  <h1>${esc(p.heading)}</h1>
   <figure>
     ${img(p.image, { alt: p.caption[0], eager: true })}
     <figcaption>${p.caption.map(esc).join('<br>')}</figcaption>
@@ -137,7 +137,7 @@ function portfolio() {
   return layout({
     title: `Portfolio | ${TITLE}`,
     body: `<main class="portfolio">
-  <h1 class="portfolio-title">${esc(p.heading)}</h1>
+  <h1>${esc(p.heading)}</h1>
   ${p.series.map(s => `<section class="series">
     <h2>${esc(s.title)}</h2>
     <p class="years">${esc(s.years)}</p>
