@@ -42,10 +42,14 @@ h1 {
   margin-bottom: 24px;
 }
 
+/* Each page fills at least the window, so the nav buttons sit at its bottom right. */
 main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   max-width: var(--content);
   margin: 0 auto;
-  padding: 48px var(--gutter) 64px;
+  padding: 48px var(--gutter) 48px;
 }
 
 /* Buttons */
@@ -65,13 +69,13 @@ main {
 .button:hover, .button:focus-visible { opacity: 0.8; }
 .button-blue { background: var(--blue); font-size: 14px; }
 
-.page-nav { margin-top: 56px; text-align: right; }
+.page-nav { margin-top: auto; padding-top: 56px; text-align: right; }
 
 /* Home */
 
 body.home { background: var(--ink); color: var(--paper); }
 
-.landing { text-align: center; padding-top: 24px; }
+.landing { align-items: center; text-align: center; padding-top: 24px; }
 
 .landing figure img { width: min(491px, 100%); margin: 0 auto; }
 
@@ -161,7 +165,6 @@ body.home { background: var(--ink); color: var(--paper); }
 .work-images img { max-height: 600px; width: auto; }
 .work-images:has(> a + a) img { max-height: 440px; }
 .work-details { font-size: 17px; margin: 12px 0 0; }
-.work-nav { margin-top: 20px; }
 
 /* Narrow screens */
 
@@ -177,5 +180,4 @@ body.home { background: var(--ink); color: var(--paper); }
   .works-grid { grid-template-columns: repeat(2, 1fr); gap: 28px 16px; }
   .work > a, .work > img { height: auto; }
   .work img { max-height: none; width: 100%; }
-  .page-nav { text-align: center; }
 }

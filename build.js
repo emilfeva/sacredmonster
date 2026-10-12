@@ -146,8 +146,8 @@ function portfolio() {
       ${s.works.map(workCard).join('\n      ')}
     </div>
   </section>`).join('\n  ')}
-  <nav class="page-nav">${p.links.map(l => link(l, '', 'button button-blue')).join(' ')}</nav>
   ${p.press ? `<p class="press">${esc(p.press)}</p>` : ''}
+  <nav class="page-nav">${p.links.map(l => link(l, '', 'button button-blue')).join(' ')}</nav>
 </main>`,
   });
 }
@@ -163,7 +163,7 @@ function workPage(w) {
     ${images.map((n, i) => `<a href="${prefix}${FILES.portfolio}#${w.image}">${img(n, { prefix, alt: w.title, eager: i === 0 })}</a>`).join('\n    ')}
   </div>
   <p class="work-details">${esc(w.details)}${w.collection ? `<br>(${esc(w.collection)})` : ''}</p>
-  <nav class="work-nav"><a class="button" href="${prefix}${w.back}">Back</a></nav>
+  <nav class="page-nav"><a class="button" href="${prefix}${w.back}">Back</a></nav>
 </main>`,
   });
 }
