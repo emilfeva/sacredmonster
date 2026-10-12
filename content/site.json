@@ -166,10 +166,9 @@
             },
             {
               "title": "Moonstone",
-              "details": "Alabaster | 9 x 16 x 4'",
+              "details": "Alabaster | 9 x 16 x 4\"",
               "image": "moonstone",
-              "wix_detail_page": "moonstone",
-              "note": "Wix shows 4' (feet); likely meant 4\" (inches)."
+              "wix_detail_page": "moonstone"
             },
             {
               "title": "DreamShell",
@@ -294,18 +293,17 @@
               "title": "Box of Awe (Closed)",
               "details": "Pressboard, plexiglass mirror, nails, paint | 10\" x 10\" x 18\"",
               "image": "box-of-awe-closed",
-              "wix_detail_page": null,
-              "note": "Not linked on Wix."
+              "wix_detail_page": "box-of-awe-closed",
+              "detail_images": [
+                "box-of-awe-detail"
+              ]
             },
             {
               "title": "Box of Awe (Open)",
               "details": "Pressboard, plexiglass mirror, nails, paint | 10\" x 10\" x 18\"",
               "image": "box-of-awe-open",
               "wix_detail_page": "box-of-awe",
-              "collection": "Personal Collection",
-              "detail_images": [
-                "box-of-awe-detail"
-              ]
+              "collection": "Personal Collection"
             }
           ]
         },
