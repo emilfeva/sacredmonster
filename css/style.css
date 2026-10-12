@@ -135,7 +135,8 @@ body.home { background: var(--ink); color: var(--paper); }
 
 .story-text { max-width: 900px; margin: 48px auto 0; font-size: 21px; }
 .story-text p { margin: 0; }
-.story-text .dedication { font-size: 19px; font-style: italic; margin-top: 4px; }
+.story-text p + p { margin-top: 0.7em; }
+.story-text .dedication { font-size: 19px; font-style: italic; margin-top: 1.2em; }
 
 /* Portfolio */
 
@@ -178,7 +179,6 @@ body.home { background: var(--ink); color: var(--paper); }
   .sm-right figure:first-child { width: 100%; }
   .photo-grid { grid-template-columns: repeat(2, 1fr); gap: 24px 16px; }
   .story-text { font-size: 19px; }
-  .story-text p + p { margin-top: 0.6em; }
   .works-grid { grid-template-columns: repeat(2, 1fr); gap: 28px 16px; }
   .work > a, .work > img { height: auto; }
   .work img { max-height: none; width: 100%; }
