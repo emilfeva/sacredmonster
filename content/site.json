@@ -57,7 +57,8 @@
           "text": "The Story",
           "to": "story"
         }
-      ]
+      ],
+      "closing": "Sacred Monster marks the re-emergence of Szaja Gottlieb as a sculptor. New work is in progress."
     },
     {
       "id": "story",

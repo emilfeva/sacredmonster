@@ -120,6 +120,8 @@ body.home { background: var(--ink); color: var(--paper); }
 
 .facts { margin: 12px 0 0; padding-left: 1.2em; font-size: 17px; }
 
+.closing { margin: 56px 0 0; font-size: 21px; text-align: center; }
+
 /* Story */
 
 .photo-grid {
