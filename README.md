@@ -30,15 +30,11 @@ The Portfolio page and the work's own page are both generated from that entry. E
 
 ## Hosting
 
-The site is published with GitHub Pages at https://szajagottlieb.com. The domain is registered at GoDaddy.
+The site is published with GitHub Pages at https://szajagottlieb.com. `.github/workflows/pages.yml` rebuilds and publishes it on every push to `main`, usually within a minute or two. It deploys only the website files: the pages, `css/`, `images/` and `CNAME`.
 
-`.github/workflows/pages.yml` rebuilds and publishes the site on every push to `main`. It deploys only the website files: the pages, `css/`, `images/` and `CNAME`.
+How it's set up:
 
-One-time setup:
-
-1. The repository must be public, or the GitHub account needs a plan that allows Pages for private repositories.
-2. In the repository settings, under **Pages**, set the source to **GitHub Actions** and the custom domain to `szajagottlieb.com`. Turn on **Enforce HTTPS** once it's offered.
-3. In GoDaddy's DNS settings for szajagottlieb.com:
-   - Add four `A` records for `@`: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`.
-   - Add a `CNAME` record for `www` pointing to `emilfeva.github.io`.
-   - Remove any other `A` record for `@`, any "Parked" record and any domain forwarding.
+- The repository is public, which GitHub Pages requires on a free account.
+- In the repository settings, under **Pages**, the source is **GitHub Actions** and the custom domain is `szajagottlieb.com`. Turn on **Enforce HTTPS** there once GitHub has issued the certificate.
+- The domain is registered at GoDaddy in Szaja Gottlieb's account (Emil has delegate access) and auto-renews each October. GoDaddy's Websites + Marketing builder can't host this site, so GoDaddy only provides the domain and its DNS.
+- GoDaddy DNS for szajagottlieb.com has four `A` records for `@` (`185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`) and a `CNAME` for `www` pointing to `@`. To edit them, open `dcc.godaddy.com/control/dnsmanagement?domainName=szajagottlieb.com` while logged in to that account.
