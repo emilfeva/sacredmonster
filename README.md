@@ -30,4 +30,15 @@ The Portfolio page and the work's own page are both generated from that entry. E
 
 ## Hosting
 
-Everything is static, so any static host works, including GitHub Pages serving from the repository root.
+The site is published with GitHub Pages at https://szajagottlieb.com. The domain is registered at GoDaddy.
+
+`.github/workflows/pages.yml` rebuilds and publishes the site on every push to `main`. It deploys only the website files: the pages, `css/`, `images/` and `CNAME`.
+
+One-time setup:
+
+1. The repository must be public, or the GitHub account needs a plan that allows Pages for private repositories.
+2. In the repository settings, under **Pages**, set the source to **GitHub Actions** and the custom domain to `szajagottlieb.com`. Turn on **Enforce HTTPS** once it's offered.
+3. In GoDaddy's DNS settings for szajagottlieb.com:
+   - Add four `A` records for `@`: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`.
+   - Add a `CNAME` record for `www` pointing to `emilfeva.github.io`.
+   - Remove any other `A` record for `@`, any "Parked" record and any domain forwarding.
