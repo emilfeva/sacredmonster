@@ -26,7 +26,7 @@ Add an entry to the right series in `site.json`, using the same shape as the oth
 2. Make a thumbnail of it in `images/thumbs/`, for example with `convert images/x.jpg -resize 640x640\> images/thumbs/x.jpg`.
 3. Give the work a `wix_detail_page` value (any text) if it should get its own page.
 
-The Portfolio page and the work's own page are both generated from that entry. Each work page's **Back** button goes to the previous work in portfolio order, and the first one goes to the Sacred Monster page, as it did on Wix.
+The Portfolio page and the work's own page are both generated from that entry. Clicking the image on a work's page returns to that work on the Portfolio page.
 
 ## Hosting
 

@@ -17,12 +17,9 @@ const rich = s => esc(s).replace(/\*([^*]+)\*/g, '<em>$1</em>');
 const FILES = { home: 'index.html', 'sacred-monster': 'sacred-monster.html', story: 'story.html', portfolio: 'portfolio.html' };
 
 // Every captioned, linked work gets its own page, named after its image.
-// "Back" on each work page goes to the previous work in portfolio order.
+// Clicking the image on that page returns to the work on the Portfolio page.
 const works = page('portfolio').series.flatMap(s => s.works).filter(w => w.wix_detail_page);
-works.forEach((w, i) => {
-  w.file = `works/${w.image}.html`;
-  w.back = i > 0 ? works[i - 1].file : FILES['sacred-monster'];
-});
+works.forEach(w => { w.file = `works/${w.image}.html`; });
 
 // `prefix` is the relative path back to the site root ('' or '../').
 function img(name, { prefix = '', thumb = false, alt = '', cls = '', eager = false } = {}) {
@@ -172,7 +169,6 @@ function workPage(w) {
     ${images.map((n, i) => `<a href="${prefix}${FILES.portfolio}#${w.image}">${img(n, { prefix, alt: w.title, eager: i === 0 })}</a>`).join('\n    ')}
   </div>
   <p class="work-details">${esc(w.details)}${w.collection ? `<br>(${esc(w.collection)})` : ''}</p>
-  <nav class="page-nav"><a class="button" href="${prefix}${w.back}">Back</a></nav>
 </main>`,
   });
 }
