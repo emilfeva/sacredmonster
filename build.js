@@ -124,10 +124,13 @@ function story() {
   });
 }
 
+// "Material | dimensions" in site.json is shown as two lines: material, then dimensions.
+const detailLines = d => d.split(' | ').map(esc);
+
 function workCard(w) {
   const caption = w.title ? `<figcaption>
           <span class="work-title">${rich(w.title)}</span>
-          <span>${esc(w.details)}</span>${w.collection ? `\n          <span>(${esc(w.collection)})</span>` : ''}
+          ${detailLines(w.details).map(t => `<span>${t}</span>`).join('\n          ')}${w.collection ? `\n          <span>(${esc(w.collection)})</span>` : ''}
         </figcaption>` : '';
   const picture = img(w.image, { thumb: true, alt: w.title || 'Untitled work' });
   return `<figure class="work" id="${w.image}">
@@ -169,7 +172,7 @@ function workPage(w) {
   <div class="work-images">
     ${images.map((n, i) => `<a href="${prefix}${FILES.portfolio}#${w.image}">${img(n, { prefix, alt: w.title, eager: i === 0 })}</a>`).join('\n    ')}
   </div>
-  <p class="work-details">${esc(w.details)}${w.collection ? `<br>(${esc(w.collection)})` : ''}</p>
+  <p class="work-details">${detailLines(w.details).join('<br>')}${w.collection ? `<br>(${esc(w.collection)})` : ''}</p>
 </main>`,
   });
 }
