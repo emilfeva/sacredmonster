@@ -101,7 +101,7 @@ function sacredMonster() {
       ${side(p.secondary_images.right)}
     </div>
   </div>
-  ${p.closing ? `<p class="closing">${esc(p.closing)}</p>` : ''}
+  ${p.closing ? `<p class="closing">${rich(p.closing)}</p>` : ''}
   <nav class="page-nav">${p.links.map(l => link(l)).join(' ')}</nav>
 </main>`,
   });
