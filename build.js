@@ -37,14 +37,28 @@ function link(l, prefix = '', cls = 'button') {
   return `<a class="${cls}" href="${prefix}${FILES[l.to]}">${esc(l.text)}</a>`;
 }
 
-function layout({ title, body, prefix = '', bodyClass = '' }) {
+const SITE_URL = 'https://szajagottlieb.com/';
+const DESCRIPTION = 'Szaja Gottlieb, sculptor: Sacred Monster (Monstre Sacré) and a portfolio of stone and mixed-media sculpture, 1978–2026.';
+
+// `file` is the page's path from the site root, for its link preview (og:url).
+function layout({ title, body, file, prefix = '', bodyClass = '' }) {
   return `<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(title)}</title>
-<meta name="description" content="Szaja Gottlieb, sculptor: Sacred Monster (Monstre Sacré) and a portfolio of stone and mixed-media sculpture, 1978–2026.">
+<meta name="description" content="${esc(DESCRIPTION)}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Szaja Gottlieb">
+<meta property="og:title" content="${esc(title)}">
+<meta property="og:description" content="${esc(DESCRIPTION)}">
+<meta property="og:url" content="${SITE_URL}${file === FILES.home ? '' : file}">
+<meta property="og:image" content="${SITE_URL}images/share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Abraxas, by Szaja Gottlieb">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
@@ -62,7 +76,7 @@ const TITLE = 'Szaja Gottlieb';
 function home() {
   const p = page('home');
   return layout({
-    title: TITLE, bodyClass: 'home',
+    title: TITLE, file: FILES.home, bodyClass: 'home',
     body: `<main class="landing">
   <h1>${esc(p.heading)}</h1>
   <figure>
@@ -78,7 +92,7 @@ function sacredMonster() {
   const p = page('sacred-monster');
   const side = names => names.map(n => `<figure>${img(n, { alt: 'Sacred Monster, detail' })}</figure>`).join('\n      ');
   return layout({
-    title: `Sacred Monster | ${TITLE}`,
+    title: `Sacred Monster | ${TITLE}`, file: FILES['sacred-monster'],
     body: `<main class="sacred-monster">
   <header class="page-header">
     <h1>${esc(p.heading).replace(/ (\d{4}–\d{4})/, '<br>$1')}</h1>
@@ -108,7 +122,7 @@ function sacredMonster() {
 function story() {
   const p = page('story');
   return layout({
-    title: `The Story | ${TITLE}`,
+    title: `The Story | ${TITLE}`, file: FILES.story,
     body: `<main class="story">
   <div class="photo-grid">
     ${p.photos.map(ph => `<figure>${img(ph.image, { alt: `Sacred Monster, ${ph.caption}` })}<figcaption>${esc(ph.caption)}</figcaption></figure>`).join('\n    ')}
@@ -142,7 +156,7 @@ function workCard(w) {
 function portfolio() {
   const p = page('portfolio');
   return layout({
-    title: `Portfolio | ${TITLE}`,
+    title: `Portfolio | ${TITLE}`, file: FILES.portfolio,
     body: `<main class="portfolio">
   <h1>${esc(p.heading)}</h1>
   ${p.series.map(s => `<section class="series">
@@ -166,7 +180,7 @@ function workPage(w) {
   const prefix = '../';
   const images = [w.image, ...(w.detail_images || [])];
   return layout({
-    title: `${w.title} | ${TITLE}`, prefix,
+    title: `${w.title} | ${TITLE}`, file: w.file, prefix,
     body: `<main class="work-page">
   <h1>${esc(w.title)}</h1>
   <div class="work-images">
