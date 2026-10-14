@@ -5,6 +5,9 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = __dirname;
+// Changes whenever the stylesheet does, so browsers fetch the new one instead of a cached copy.
+const CSS_VERSION = require('crypto').createHash('md5')
+  .update(fs.readFileSync(path.join(ROOT, 'css/style.css'))).digest('hex').slice(0, 8);
 const site = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/site.json'), 'utf8'));
 const page = id => site.pages.find(p => p.id === id);
 
@@ -45,7 +48,7 @@ function layout({ title, body, prefix = '', bodyClass = '' }) {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
-<link rel="stylesheet" href="${prefix}css/style.css">
+<link rel="stylesheet" href="${prefix}css/style.css?v=${CSS_VERSION}">
 </head>
 <body${bodyClass ? ` class="${bodyClass}"` : ''}>
 ${body}

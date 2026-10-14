@@ -79,6 +79,9 @@ main {
 .button-blue { background: var(--blue); font-size: 14px; }
 
 .page-nav { margin-top: auto; padding-top: 40px; text-align: right; }
+/* The Story button follows the closing line directly, wherever that falls in the window. */
+.sacred-monster { min-height: 0; }
+.sacred-monster .page-nav { padding-top: 12px; }
 
 /* Home */
 
@@ -131,7 +134,7 @@ body.home { background: var(--ink); color: var(--paper); }
 .facts { margin: 12px 0 0; padding-left: 1.2em; font-size: 17px; }
 
 /* One line on wider screens: the font shrinks with the window to keep it there. */
-.closing { margin: 56px 0 0; font-size: min(20px, calc((100vw - 32px) / 47)); text-align: center; white-space: nowrap; }
+.closing { margin: 32px 0 0; font-size: min(20px, calc((100vw - 32px) / 47)); text-align: center; white-space: nowrap; }
 
 /* Story */
 
