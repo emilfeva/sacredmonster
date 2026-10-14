@@ -91,15 +91,13 @@ function sacredMonster() {
     </div>
     <figure class="sm-main">
       ${img(p.main_image, { alt: 'Sacred Monster', eager: true })}
-      <figcaption>
-        <ul class="facts">
-          ${p.facts.map(f => `<li>${esc(f)}</li>`).join('\n          ')}
-        </ul>
-      </figcaption>
     </figure>
     <div class="sm-side sm-right">
       ${side(p.secondary_images.right)}
     </div>
+    <ul class="facts">
+      ${p.facts.map(f => `<li>${esc(f)}</li>`).join('\n      ')}
+    </ul>
   </div>
   ${p.closing ? `<p class="closing">${p.closing.map(t => `<span>${rich(t)}</span>`).join(' ')}</p>` : ''}
   <nav class="page-nav">${p.links.map(l => link(l)).join(' ')}</nav>
