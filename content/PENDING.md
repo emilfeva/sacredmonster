@@ -4,7 +4,8 @@ Changes waiting on details from the artist before they go on the site.
 
 ## Sacrificial Block
 
-- Collection line: **Yeshiva University Museum, New York. Gift of the artist**
+- Collection line: **Collection of Yeshiva University Museum, New York**
+- Caption format: *Sacrificial Block* (title in italics), [medium], [dimensions]
 - It is one of the three uncaptioned Icehouse photos on the Portfolio page, not yet confirmed which:
   - `icehouse-untitled-1`: two white striped blocks (Wix file Img_011)
   - `icehouse-untitled-2`: long low marbled wedge on a pedestal (Wix file Img_012)

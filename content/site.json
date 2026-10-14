@@ -33,7 +33,7 @@
       "id": "sacred-monster",
       "wix_slug": "sacred-monster-sacred-beast",
       "wix_title": "Sacred Monster Sacred Beast",
-      "heading": "SACRED MONSTER (MONSTRE SACRÉ) 1992-2026",
+      "heading": "SACRED MONSTER (MONSTRE SACRÉ) 1992–2026",
       "subheading": "\"A conceptual piece made by a primitive\"",
       "main_image": "sacred-monster",
       "facts": [
@@ -58,7 +58,8 @@
           "to": "story"
         }
       ],
-      "closing": "Sacred Monster marks the re-emergence of Szaja Gottlieb as a sculptor. New work is in progress."
+      "closing": "Sacred Monster marks the re-emergence of Szaja Gottlieb as a sculptor. New work is in progress.",
+      "attribution": "— S.G."
     },
     {
       "id": "story",
@@ -92,11 +93,11 @@
       ],
       "heading": "The Story of Sacred Monster",
       "paragraphs": [
-        "In 1992 I set out to make a stone sculpture that could not be touched. The inspiration was the Kongo nkisi nkondi, power figures driven with nails. The title was Untouchable You.",
-        "Once finished, it became a logistical problem, a cosmic joke I had played on myself: a thousand-pound sculpture that had to be moved but could not be touched. Predictably, it was damaged in 1995 in the move from Art City to StoneWorks, Michelle Chapin’s studio. In December 1998 a fire at Art City destroyed all my stored work. Safe at StoneWorks, in Ventura, Untouchable You was the sole survivor.",
+        "In 1992 I set out to make a stone sculpture that could not be touched. The inspiration was the Kongo *nkisi nkondi*, power figures driven with nails. The title was *Untouchable You*.",
+        "Once finished, it became a logistical problem, a cosmic joke I had played on myself: a thousand-pound sculpture that had to be moved but could not be touched. Predictably, it was damaged in 1995 in the move from Art City to StoneWorks, Michelle Chapin’s studio. In December 1998 a fire at Art City destroyed all my stored work. Safe at StoneWorks, in Ventura, *Untouchable You* was the sole survivor.",
         "There it sat until 2017, when the sculpture yard was reorganized and I was asked to remove it. With neither the means to move it nor a place to put it, I accepted an offer from Norm Fawley, a client of my Structural Integration practice: a truck, and space at his ranch in Cayucos.",
         "Eight years later, in 2025, with Norm in failing health, I had to decide whether to finish the damaged sculpture or abandon it. I repaired the damage by reinstalling the original nails and, unexpectedly, adding many thousands more. Absorbed again in the demands of the artwork, I let the piece dictate a different path: from untouchability to survivorship, from prohibition to indifference.",
-        "Hence the new title: Sacred Monster, or Monstre Sacré. In French culture, a monstre sacré is a figure of such stature that ordinary rules no longer apply. The sculpture had earned the name. It survived what destroyed everything else and requires its own terms, including a hand truck special-ordered for its body: the Dutro Brute, rated at 1,600 lbs, which will accompany Sacred Monster for its lifetime. For many nights I had worked out the move in my dreams. In June 2026 it was moved without incident by a crew wearing Sacred Monster T-shirts. The complete move is on video: proof of concept."
+        "Hence the new title: *Sacred Monster*, or *Monstre Sacré*. In French culture, a *monstre sacré* is a figure of such stature that ordinary rules no longer apply. The sculpture had earned the name. It survived what destroyed everything else and requires its own terms, including a hand truck special-ordered for its body: the Dutro Brute, rated at 1,600 lbs, which will accompany *Sacred Monster* for its lifetime. For many nights I had worked out the move in my dreams. In June 2026 it was moved without incident by a crew wearing *Sacred Monster* T-shirts. The complete move is on video: proof of concept."
       ],
       "dedication": "Dedicated to Norm Fawley (1942–2025), a sacred monster in his own right, without whose generosity it would not have been finished.",
       "links": [
@@ -107,7 +108,8 @@
       ],
       "notes": [
         "Wix has a stray 'Cayucos, 2017' text box overlapping the June 2026 photo; omitted here."
-      ]
+      ],
+      "epigraph": "Art as Fetish: Fetish as Art"
     },
     {
       "id": "portfolio",
@@ -181,7 +183,7 @@
         },
         {
           "title": "ICEHOUSE ABSTRACT GEOMETRIC",
-          "years": "1980-1984",
+          "years": "1980–1984",
           "description": "This period represents an abandonment of the lyrical in favor of the hard geometric edge unusual in stone sculpture and an engagement with the stone as material especially the color and patterns that alabaster offers.",
           "works": [
             {
@@ -235,7 +237,7 @@
         },
         {
           "title": "ARTEFACTOTEM SERIES (STRONG STEEL BUILDING)",
-          "years": "1989-1992",
+          "years": "1989–1992",
           "description": "After a stint as a professional mover my work transformed in size and materials. No longer carving, I approached stone as purely material and added other common materials to explore ideas and symbols.",
           "works": [
             {
@@ -293,20 +295,21 @@
               "wix_detail_page": "box-of-awe-closed",
               "detail_images": [
                 "box-of-awe-detail"
-              ]
+              ],
+              "collection": "Collection of the artist"
             },
             {
               "title": "Box of Awe (Open)",
               "details": "Pressboard, plexiglass mirror, nails, paint | 10\" x 10\" x 18\"",
               "image": "box-of-awe-open",
               "wix_detail_page": "box-of-awe",
-              "collection": "Personal Collection"
+              "collection": "Collection of the artist"
             }
           ]
         },
         {
           "title": "MONOPOLYLITH SERIES (STRONG STEEL AND ART CITY)",
-          "years": "1992-1995",
+          "years": "1992–1995",
           "description": "The Monopolylith series represents approaching stone as purely material from the viewpoint of mass, weight, and density. Using previous techniques of nails and wire and using a wooden armature, these works appear weightless and impossible.",
           "works": [
             {
@@ -358,7 +361,15 @@
           ]
         }
       ],
-      "press": "Press: Los Angeles Times (Ventura Edition) 2/27/1992. Profile: Going Public. Ventura artist Szaja Gottlieb makes a big statement with his sculptures while voicing an interest in community culture."
+      "press": {
+        "heading": "PRESS",
+        "items": [
+          {
+            "source": "*Los Angeles Times* (Ventura Edition), February 27, 1992",
+            "title": "“Going Public: Ventura artist Szaja Gottlieb makes a big statement with his sculptures.”"
+          }
+        ]
+      }
     }
   ],
   "work_detail_pages": "On Wix each linked work has its own page with the image large and a black 'Back' button (only 'Fear and Wonder' also shows the title). The Back buttons are chained to the previous work's page rather than the portfolio, which looks unintentional.",

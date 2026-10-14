@@ -10,6 +10,8 @@ const page = id => site.pages.find(p => p.id === id);
 
 const esc = s => String(s)
   .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+// Like esc, but *text* becomes italic (titles, foreign words).
+const rich = s => esc(s).replace(/\*([^*]+)\*/g, '<em>$1</em>');
 
 // Top-level pages and their output files.
 const FILES = { home: 'index.html', 'sacred-monster': 'sacred-monster.html', story: 'story.html', portfolio: 'portfolio.html' };
@@ -79,8 +81,9 @@ function sacredMonster() {
     title: `Sacred Monster | ${TITLE}`,
     body: `<main class="sacred-monster">
   <header class="page-header">
-    <h1>${esc(p.heading).replace(/(\d{4}-\d{4})/, '<span class="nowrap">$1</span>')}</h1>
+    <h1>${esc(p.heading).replace(/(\d{4}–\d{4})/, '<span class="nowrap">$1</span>')}</h1>
     <p class="quote">${esc(p.subheading)}</p>
+    ${p.attribution ? `<p class="attribution">${esc(p.attribution)}</p>` : ''}
   </header>
   <div class="sm-grid">
     <div class="sm-side sm-left">
@@ -114,8 +117,9 @@ function story() {
   </div>
   <article class="story-text">
     <h1>${esc(p.heading)}</h1>
-    ${p.paragraphs.map(t => `<p>${esc(t)}</p>`).join('\n    ')}
-    <p class="dedication">${esc(p.dedication)}</p>
+    ${p.epigraph ? `<p class="epigraph">${rich(p.epigraph)}</p>` : ''}
+    ${p.paragraphs.map(t => `<p>${rich(t)}</p>`).join('\n    ')}
+    <p class="dedication">${rich(p.dedication)}</p>
   </article>
   <nav class="page-nav">${p.links.map(l => link(l, '', 'button button-blue')).join(' ')}</nav>
 </main>`,
@@ -124,7 +128,7 @@ function story() {
 
 function workCard(w) {
   const caption = w.title ? `<figcaption>
-          <span class="work-title">${esc(w.title)}</span>
+          <span class="work-title">${rich(w.title)}</span>
           <span>${esc(w.details)}</span>${w.collection ? `\n          <span>(${esc(w.collection)})</span>` : ''}
         </figcaption>` : '';
   const picture = img(w.image, { thumb: true, alt: w.title || 'Untitled work' });
@@ -148,7 +152,10 @@ function portfolio() {
       ${s.works.map(workCard).join('\n      ')}
     </div>
   </section>`).join('\n  ')}
-  ${p.press ? `<p class="press">${esc(p.press)}</p>` : ''}
+  ${p.press ? `<section class="series press">
+    <h2>${esc(p.press.heading)}</h2>
+    ${p.press.items.map(it => `<p>${rich(it.source)}<br>${rich(it.title)}</p>`).join('\n    ')}
+  </section>` : ''}
   <nav class="page-nav">${p.links.map(l => link(l, '', 'button button-blue')).join(' ')}</nav>
 </main>`,
   });

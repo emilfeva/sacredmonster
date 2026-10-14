@@ -106,6 +106,7 @@ body.home { background: var(--ink); color: var(--paper); }
 .page-header { text-align: center; margin-bottom: 40px; }
 .page-header h1 { margin-bottom: 0; }
 .quote { font-size: clamp(20px, 2.5vw, 28px); font-style: italic; font-weight: 400; margin: 20px 0 0; }
+.attribution { font-size: clamp(17px, 2vw, 21px); margin: 6px 0 0; }
 
 .sm-grid {
   display: grid;
@@ -135,6 +136,7 @@ body.home { background: var(--ink); color: var(--paper); }
 
 .story-text { max-width: 900px; margin: 48px auto 0; font-size: 21px; }
 .story-text p { margin: 0; }
+.story-text .epigraph { font-style: italic; text-align: center; margin: -8px 0 32px; }
 .story-text p + p { margin-top: 0.7em; }
 .story-text .dedication { font-size: 19px; font-style: italic; margin-top: 1.2em; }
 
@@ -159,7 +161,7 @@ body.home { background: var(--ink); color: var(--paper); }
 .work figcaption { margin-top: 4px; font-size: 14px; line-height: 1.25; }
 .work figcaption span { display: block; }
 
-.press { margin: 48px 0 0; font-size: 14px; }
+.press p { margin: 16px 0 0; font-size: 19px; }
 
 /* Work detail pages */
 
