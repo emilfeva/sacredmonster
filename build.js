@@ -38,7 +38,7 @@ function link(l, prefix = '', cls = 'button') {
 }
 
 const SITE_URL = 'https://szajagottlieb.com/';
-const DESCRIPTION = 'Szaja Gottlieb, sculptor: Sacred Monster (Monstre Sacré) and a portfolio of stone and mixed-media sculpture, 1978–2026.';
+const DESCRIPTION = 'Sculptor. Sacred Monster (Monstre Sacré) and a portfolio of work, 1978–2026.';
 
 // `file` is the page's path from the site root, for its link preview (og:url).
 function layout({ title, body, file, prefix = '', bodyClass = '' }) {
