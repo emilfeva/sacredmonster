@@ -101,7 +101,7 @@ function sacredMonster() {
       ${side(p.secondary_images.right)}
     </div>
   </div>
-  ${p.closing ? `<p class="closing">${rich(p.closing)}</p>` : ''}
+  ${p.closing ? `<p class="closing">${p.closing.map(t => `<span>${rich(t)}</span>`).join(' ')}</p>` : ''}
   <nav class="page-nav">${p.links.map(l => link(l)).join(' ')}</nav>
 </main>`,
   });
@@ -121,7 +121,7 @@ function story() {
     ${p.paragraphs.map(t => `<p>${rich(t)}</p>`).join('\n    ')}
     <p class="dedication">${rich(p.dedication)}</p>
   </article>
-  <nav class="page-nav">${p.links.map(l => link(l, '', 'button button-blue')).join(' ')}</nav>
+  <nav class="page-nav">${p.links.map(l => link(l)).join(' ')}</nav>
 </main>`,
   });
 }
@@ -156,7 +156,7 @@ function portfolio() {
     <h2>${esc(p.press.heading)}</h2>
     ${p.press.items.map(it => `<p>${rich(it.source)}<br>${rich(it.title)}</p>`).join('\n    ')}
   </section>` : ''}
-  <nav class="page-nav">${p.links.map(l => link(l, '', 'button button-blue')).join(' ')}</nav>
+  <nav class="page-nav">${p.links.map(l => link(l)).join(' ')}</nav>
 </main>`,
   });
 }

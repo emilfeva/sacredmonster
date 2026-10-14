@@ -6,7 +6,6 @@
   --ink: #000;
   --paper: #fff;
   --red: rgb(205, 26, 26);
-  --blue: #0057e1;
   --content: 980px;
   --gutter: 16px;
 }
@@ -51,11 +50,9 @@ body:not(.home) h1 {
   color: var(--paper);
 }
 
-/* Each page fills at least the window, so the nav buttons sit at its bottom right. */
 main {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   max-width: var(--content);
   margin: 0 auto;
   padding: 48px var(--gutter) 16px;
@@ -76,12 +73,9 @@ main {
   text-decoration: none;
 }
 .button:hover, .button:focus-visible { opacity: 0.8; }
-.button-blue { background: var(--blue); font-size: 14px; }
 
-.page-nav { margin-top: auto; padding-top: 40px; text-align: right; }
-/* The Story button follows the closing line directly, wherever that falls in the window. */
-.sacred-monster { min-height: 0; }
-.sacred-monster .page-nav { padding-top: 12px; }
+/* Page buttons sit centered, just below the page content. */
+.page-nav { padding-top: 24px; text-align: center; }
 
 /* Home */
 
@@ -194,7 +188,8 @@ body.home { background: var(--ink); color: var(--paper); }
   .sm-right figure:first-child { width: 100%; }
   .photo-grid { grid-template-columns: repeat(2, 1fr); gap: 24px 16px; }
   .story-text { font-size: 19px; }
-  .closing { font-size: 19px; white-space: normal; }
+  .closing { font-size: min(16px, calc((100vw - 32px) / 28)); }
+  .closing span { display: block; }
   .works-grid { grid-template-columns: repeat(2, 1fr); gap: 28px 16px; }
   .work > a, .work > img { height: auto; }
   .work img { max-height: none; width: 100%; }

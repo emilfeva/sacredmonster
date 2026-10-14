@@ -58,7 +58,10 @@
           "to": "story"
         }
       ],
-      "closing": "*Sacred Monster* marks Szaja Gottlieb’s re-emergence as a sculptor. In progress: IRONY, an homage to Marcel Duchamp.",
+      "closing": [
+        "*Sacred Monster* marks Szaja Gottlieb’s re-emergence as a sculptor.",
+        "In progress: IRONY, an homage to Marcel Duchamp."
+      ],
       "attribution": "— S.G."
     },
     {
