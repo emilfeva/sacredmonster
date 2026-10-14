@@ -78,7 +78,7 @@ function sacredMonster() {
     title: `Sacred Monster | ${TITLE}`,
     body: `<main class="sacred-monster">
   <header class="page-header">
-    <h1>${esc(p.heading).replace(/(\d{4}–\d{4})/, '<span class="nowrap">$1</span>')}</h1>
+    <h1>${esc(p.heading).replace(/ (\d{4}–\d{4})/, '<br>$1')}</h1>
     <p class="quote">${esc(p.subheading)}</p>
     ${p.attribution ? `<p class="attribution">${esc(p.attribution)}</p>` : ''}
   </header>

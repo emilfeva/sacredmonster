@@ -37,9 +37,18 @@ h1, h2 { font-weight: 600; line-height: 1.15; margin: 0; }
 
 /* One page-heading style for every page. */
 h1 {
-  font-size: clamp(28px, 4vw, 42px);
+  font-size: clamp(30px, 4.6vw, 48px);
   text-align: center;
   margin-bottom: 24px;
+}
+/* White on black titles; the home page is already white on black. */
+body:not(.home) h1 {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4px 14px;
+  background: var(--ink);
+  color: var(--paper);
 }
 
 /* Each page fills at least the window, so the nav buttons sit at its bottom right. */
