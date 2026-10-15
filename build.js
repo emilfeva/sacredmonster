@@ -15,6 +15,8 @@ const esc = s => String(s)
   .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 // Like esc, but *text* becomes italic (titles, foreign words).
 const rich = s => esc(s).replace(/\*([^*]+)\*/g, '<em>$1</em>');
+// Text with the *italic* marks removed, for page titles and image descriptions.
+const plain = s => String(s).replace(/\*/g, '');
 
 // Top-level pages and their output files.
 const FILES = { home: 'index.html', 'sacred-monster': 'sacred-monster.html', story: 'story.html', portfolio: 'portfolio.html' };
@@ -150,7 +152,7 @@ function workCard(w) {
           <span class="work-title">${rich(w.title)}</span>
           ${detailLines(w.details).map(t => `<span>${t}</span>`).join('\n          ')}${w.collection ? `\n          <span>(${esc(w.collection)})</span>` : ''}
         </figcaption>` : '';
-  const picture = img(w.image, { thumb: true, alt: w.title || 'Untitled work' });
+  const picture = img(w.image, { thumb: true, alt: w.title ? plain(w.title) : 'Untitled work' });
   return `<figure class="work" id="${w.image}">
         ${w.file ? `<a href="${w.file}">${picture}</a>` : picture}
         ${caption}
@@ -184,11 +186,11 @@ function workPage(w) {
   const prefix = '../';
   const images = [w.image, ...(w.detail_images || [])];
   return layout({
-    title: `${w.title} | ${TITLE}`, file: w.file, prefix,
+    title: `${plain(w.title)} | ${TITLE}`, file: w.file, prefix,
     body: `<main class="work-page">
-  <h1>${esc(w.title)}</h1>
+  <h1>${rich(w.title)}</h1>
   <div class="work-images">
-    ${images.map((n, i) => `<a href="${prefix}${FILES.portfolio}#${w.image}">${img(n, { prefix, alt: w.title, eager: i === 0 })}</a>`).join('\n    ')}
+    ${images.map((n, i) => `<a href="${prefix}${FILES.portfolio}#${w.image}">${img(n, { prefix, alt: plain(w.title), eager: i === 0 })}</a>`).join('\n    ')}
   </div>
   <p class="work-details">${detailLines(w.details).join('<br>')}${w.collection ? `<br>(${esc(w.collection)})` : ''}</p>
 </main>`,
