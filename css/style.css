@@ -121,8 +121,8 @@ body.home { background: var(--ink); color: var(--paper); }
 .quote { font-size: clamp(20px, 2.5vw, 28px); font-style: italic; font-weight: 400; margin: 20px 0 0; }
 /* The attribution sits under the end of the quote, below "primitive". */
 .quote-block { display: inline-block; }
-.attribution { margin: 8px 0 0; text-align: right; }
-.attribution img { display: inline-block; height: clamp(30px, 3.2vw, 38px); width: auto; }
+.attribution { margin: 3px 0 0; text-align: right; line-height: 0; }
+.attribution img { display: inline-block; height: clamp(20px, 2.1vw, 25px); width: auto; }
 
 .sm-grid {
   display: grid;
