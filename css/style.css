@@ -87,6 +87,8 @@ main {
 body.home { background: var(--ink); color: var(--paper); }
 
 .landing { align-items: center; text-align: center; padding-top: 24px; }
+/* The artist's name is spaced out to about the width of the photo below it. */
+.landing h1 { letter-spacing: 0.19em; margin-right: -0.19em; }
 
 .landing figure img { width: min(491px, 100%); margin: 0 auto; }
 
@@ -191,6 +193,7 @@ body.home { background: var(--ink); color: var(--paper); }
 
 @media (max-width: 760px) {
   main { padding-top: 32px; }
+  .landing h1 { letter-spacing: 0.28em; margin-right: -0.28em; }
   .sm-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
   .sm-main { grid-column: 1 / -1; order: -1; }
   .sm-side { display: grid; gap: 16px; }
