@@ -100,7 +100,7 @@ function sacredMonster() {
     <h1>${esc(p.heading).replace(/ (\d{4}–\d{4})/, '<br>$1')}</h1>
     <div class="quote-block">
       <p class="quote">${esc(p.subheading)}</p>
-      ${p.attribution ? `<p class="attribution">${esc(p.attribution)}</p>` : ''}
+      ${p.attribution ? `<p class="attribution">${img(p.attribution, { alt: 'S.G.', eager: true })}</p>` : ''}
     </div>
   </header>
   <div class="sm-grid">
