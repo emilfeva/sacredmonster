@@ -77,6 +77,11 @@ main {
 /* Page buttons sit centered, just below the page content. */
 .page-nav { padding-top: 24px; text-align: center; }
 
+/* Footer, on every page */
+
+.site-footer { padding: 8px var(--gutter) 24px; font-size: 16px; text-align: center; }
+.site-footer a { color: inherit; }
+
 /* Home */
 
 body.home { background: var(--ink); color: var(--paper); }

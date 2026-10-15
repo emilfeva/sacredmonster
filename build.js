@@ -38,6 +38,7 @@ function link(l, prefix = '', cls = 'button') {
 }
 
 const SITE_URL = 'https://szajagottlieb.com/';
+const EMAIL = 'szajagottlieb@szajagottlieb.com';
 const DESCRIPTION = 'Sculptor. Sacred Monster (Monstre Sacré) and a portfolio of work, 1978–2026.';
 
 // `file` is the page's path from the site root, for its link preview (og:url).
@@ -66,6 +67,7 @@ function layout({ title, body, file, prefix = '', bodyClass = '' }) {
 </head>
 <body${bodyClass ? ` class="${bodyClass}"` : ''}>
 ${body}
+<footer class="site-footer">Inquiries: <a href="mailto:${EMAIL}">${EMAIL}</a></footer>
 </body>
 </html>
 `;
