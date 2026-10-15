@@ -334,8 +334,7 @@
               "title": "Off the Wall I",
               "details": "Sandstone, wood, nails, wire | 5' × 18\" × 18\"",
               "image": "off-the-wall-i",
-              "wix_detail_page": "off-the-wall-ii",
-              "note": "Wix page slug/title says 'Off The Wall II' but the image file is 'OffTheWallOne'."
+              "wix_detail_page": "off-the-wall-ii"
             },
             {
               "title": "Off the Wall II",
@@ -622,15 +621,15 @@
     },
     "off-the-wall-i": {
       "file": "images/off-the-wall-i.jpg",
-      "width": 1912,
-      "height": 2400,
-      "wix_original": "https://static.wixstatic.com/media/04a26e_36c659afd6bb4e1aa07e7aa02811b78e~mv2.jpg"
-    },
-    "off-the-wall-ii": {
-      "file": "images/off-the-wall-ii.jpg",
       "width": 1893,
       "height": 2400,
       "wix_original": "https://static.wixstatic.com/media/04a26e_777206fcaa2a4fb09533f737ab67bc19~mv2.jpg"
+    },
+    "off-the-wall-ii": {
+      "file": "images/off-the-wall-ii.jpg",
+      "width": 1912,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_36c659afd6bb4e1aa07e7aa02811b78e~mv2.jpg"
     },
     "wall-installation-art-city": {
       "file": "images/wall-installation-art-city.jpg",
