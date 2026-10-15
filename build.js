@@ -44,7 +44,7 @@ const EMAIL = 'szajagottlieb@szajagottlieb.com';
 const DESCRIPTION = 'Sculptor. Sacred Monster (Monstre Sacré) and a portfolio of work, 1978–2026.';
 
 // `file` is the page's path from the site root, for its link preview (og:url).
-function layout({ title, body, file, prefix = '', bodyClass = '', footer = true }) {
+function layout({ title, body, file, prefix = '', bodyClass = '', footer = false }) {
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -96,7 +96,7 @@ function sacredMonster() {
   const p = page('sacred-monster');
   const side = names => names.map(n => `<figure>${img(n, { alt: 'Sacred Monster, detail' })}</figure>`).join('\n      ');
   return layout({
-    title: `Sacred Monster | ${TITLE}`, file: FILES['sacred-monster'],
+    title: `Sacred Monster | ${TITLE}`, file: FILES['sacred-monster'], footer: true,
     body: `<main class="sacred-monster">
   <header class="page-header">
     <h1>${esc(p.heading).replace(/ (\d{4}–\d{4})/, '<br>$1')}</h1>
@@ -162,7 +162,7 @@ function workCard(w) {
 function portfolio() {
   const p = page('portfolio');
   return layout({
-    title: `Portfolio | ${TITLE}`, file: FILES.portfolio, footer: false,
+    title: `Portfolio | ${TITLE}`, file: FILES.portfolio,
     body: `<main class="portfolio">
   <h1>${esc(p.heading)}</h1>
   ${p.series.map(s => `<section class="series">
