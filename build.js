@@ -141,7 +141,7 @@ function story() {
     ${p.epigraph ? `<p class="epigraph">${rich(p.epigraph)}</p>` : ''}
   </header>
   <div class="photo-grid">
-    ${p.photos.map(ph => `<figure id="${ph.image}"><a href="${ph.file}">${img(ph.image, { alt: `Sacred Monster, ${ph.caption}` })}</a><figcaption>${esc(ph.caption)}${ph.note ? `<br>${rich(ph.note)}` : ''}</figcaption></figure>`).join('\n    ')}
+    ${p.photos.map(ph => `<figure id="${ph.image}"><a href="${ph.file}">${img(ph.image, { alt: `Sacred Monster, ${ph.caption}` })}</a><figcaption>${esc(ph.caption)}</figcaption></figure>`).join('\n    ')}
   </div>
   <article class="story-text">
     ${p.paragraphs.map(t => `<p>${rich(t)}</p>`).join('\n    ')}
