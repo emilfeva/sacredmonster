@@ -107,14 +107,14 @@ body.home { background: var(--ink); color: var(--paper); }
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 88px;
-  height: 88px;
+  width: 72px;
+  height: 72px;
   min-width: 0;
   padding: 0;
   margin-top: 20px;
   border-radius: 50%;
   background: var(--red);
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /* Sacred Monster */
