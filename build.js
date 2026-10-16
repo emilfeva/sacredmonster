@@ -87,7 +87,7 @@ function home() {
     ${img(p.image, { alt: p.caption[0], eager: true })}
     <figcaption>${p.caption.map(esc).join('<br>')}</figcaption>
   </figure>
-  ${p.links.map(l => link(l, '', 'enter')).join('\n')}
+  ${p.links.map(l => link(l, '', 'button enter')).join('\n')}
 </main>`,
   });
 }

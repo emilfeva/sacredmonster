@@ -95,24 +95,10 @@ body.home { background: var(--ink); color: var(--paper); }
 .landing figcaption { margin-top: 12px; font-size: 22px; line-height: 1.4; }
 
 .enter {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  margin-top: 12px;
-  color: var(--red);
-  font-size: 27px;
-  font-weight: 600;
-  text-decoration: none;
+  margin-top: 20px;
+  background: var(--red);
+  font-size: 18px;
 }
-.enter::after {
-  content: "";
-  width: 11px;
-  height: 11px;
-  border: solid var(--paper);
-  border-width: 3px 3px 0 0;
-  transform: rotate(45deg);
-}
-.enter:hover, .enter:focus-visible { text-decoration: underline; }
 
 /* Sacred Monster */
 
