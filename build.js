@@ -130,12 +130,14 @@ function story() {
   return layout({
     title: `The Story | ${TITLE}`, file: FILES.story,
     body: `<main class="story">
+  <header class="story-header">
+    <h1>${esc(p.heading)}</h1>
+    ${p.epigraph ? `<p class="epigraph">${rich(p.epigraph)}</p>` : ''}
+  </header>
   <div class="photo-grid">
     ${p.photos.map(ph => `<figure>${img(ph.image, { alt: `Sacred Monster, ${ph.caption}` })}<figcaption>${esc(ph.caption)}</figcaption></figure>`).join('\n    ')}
   </div>
   <article class="story-text">
-    <h1>${esc(p.heading)}</h1>
-    ${p.epigraph ? `<p class="epigraph">${rich(p.epigraph)}</p>` : ''}
     ${p.paragraphs.map(t => `<p>${rich(t)}</p>`).join('\n    ')}
     <p class="dedication">${rich(p.dedication)}</p>
   </article>

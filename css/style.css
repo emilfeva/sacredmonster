@@ -160,7 +160,8 @@ body.home { background: var(--ink); color: var(--paper); }
 
 .story-text { max-width: 900px; margin: 48px auto 0; font-size: 21px; }
 .story-text p { margin: 0; }
-.story-text .epigraph { font-style: italic; text-align: center; margin: -8px 0 32px; }
+.story-header { text-align: center; margin-bottom: 40px; }
+.story-header .epigraph { font-size: 21px; font-style: italic; margin: -8px 0 0; }
 .story-text p + p { margin-top: 0.7em; }
 .story-text .dedication { font-size: 19px; font-style: italic; margin-top: 1.2em; }
 
