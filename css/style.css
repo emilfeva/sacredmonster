@@ -96,7 +96,7 @@ body.home { background: var(--ink); color: var(--paper); }
    the photo shrinks to the height left over, and the name shrinks with it so it
    stays as wide as the photo. */
 @media (min-width: 761px) {
-  .landing { --photo-h: clamp(320px, calc(100svh - 262px), 640px); }
+  .landing { --photo-h: clamp(320px, calc(100svh - 300px), 640px); }
   .landing figure img { width: auto; height: var(--photo-h); }
   .landing h1 { font-size: calc(var(--photo-h) * 0.075); }
 }
@@ -104,7 +104,15 @@ body.home { background: var(--ink); color: var(--paper); }
 .landing figcaption { margin-top: 12px; font-size: 22px; line-height: 1.4; }
 
 .enter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 88px;
+  height: 88px;
+  min-width: 0;
+  padding: 0;
   margin-top: 20px;
+  border-radius: 50%;
   background: var(--red);
   font-size: 18px;
 }
