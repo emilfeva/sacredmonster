@@ -13,8 +13,9 @@ const page = id => site.pages.find(p => p.id === id);
 
 const esc = s => String(s)
   .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-// Like esc, but *text* becomes italic (titles, foreign words).
-const rich = s => esc(s).replace(/\*([^*]+)\*/g, '<em>$1</em>');
+// Like esc, but *text* becomes italic (titles, foreign words) and [text](url) a link.
+const rich = s => esc(s).replace(/\*([^*]+)\*/g, '<em>$1</em>')
+  .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, '<a href="$2">$1</a>');
 // Text with the *italic* marks removed, for page titles and image descriptions.
 const plain = s => String(s).replace(/\*/g, '');
 
@@ -139,7 +140,6 @@ function story() {
   </div>
   <article class="story-text">
     ${p.paragraphs.map(t => `<p>${rich(t)}</p>`).join('\n    ')}
-    ${p.about ? `<p class="about">${esc(p.about.text)}: <a href="${esc(p.about.url)}">${esc(p.about.label)}</a></p>` : ''}
     <p class="dedication">${rich(p.dedication)}</p>
   </article>
   <nav class="page-nav">${p.links.map(l => link(l)).join(' ')}</nav>
