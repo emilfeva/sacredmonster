@@ -139,6 +139,7 @@ function story() {
   </div>
   <article class="story-text">
     ${p.paragraphs.map(t => `<p>${rich(t)}</p>`).join('\n    ')}
+    ${p.about ? `<p class="about">${esc(p.about.text)}: <a href="${esc(p.about.url)}">${esc(p.about.label)}</a></p>` : ''}
     <p class="dedication">${rich(p.dedication)}</p>
   </article>
   <nav class="page-nav">${p.links.map(l => link(l)).join(' ')}</nav>
