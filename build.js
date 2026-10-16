@@ -126,6 +126,11 @@ function sacredMonster() {
   });
 }
 
+// Each photo on the story page opens its own page with the photo large,
+// titled with its caption and linked to the previous and next photo.
+const storyPhotos = page('story').photos;
+storyPhotos.forEach(ph => { ph.file = `story/${ph.image}.html`; });
+
 function story() {
   const p = page('story');
   return layout({
@@ -136,7 +141,7 @@ function story() {
     ${p.epigraph ? `<p class="epigraph">${rich(p.epigraph)}</p>` : ''}
   </header>
   <div class="photo-grid">
-    ${p.photos.map(ph => `<figure>${img(ph.image, { alt: `Sacred Monster, ${ph.caption}` })}<figcaption>${esc(ph.caption)}</figcaption></figure>`).join('\n    ')}
+    ${p.photos.map(ph => `<figure id="${ph.image}"><a href="${ph.file}">${img(ph.image, { alt: `Sacred Monster, ${ph.caption}` })}</a><figcaption>${esc(ph.caption)}${ph.note ? `<br>${rich(ph.note)}` : ''}</figcaption></figure>`).join('\n    ')}
   </div>
   <article class="story-text">
     ${p.paragraphs.map(t => `<p>${rich(t)}</p>`).join('\n    ')}
@@ -200,6 +205,24 @@ function workPage(w) {
   });
 }
 
+function storyPhotoPage(ph, i) {
+  const prefix = '../';
+  const prev = storyPhotos[i - 1], next = storyPhotos[i + 1];
+  const nav = [
+    prev && `<a class="button" href="${prefix}${prev.file}">Previous</a>`,
+    `<a class="button" href="${prefix}${FILES.story}#${ph.image}">The Story</a>`,
+    next && `<a class="button" href="${prefix}${next.file}">Next</a>`,
+  ].filter(Boolean).join(' ');
+  return layout({
+    title: `${ph.caption} | ${TITLE}`, file: ph.file, prefix,
+    body: `<main class="photo-page">
+  <h1>${esc(ph.caption)}</h1>
+  <figure>${img(ph.image, { prefix, alt: `Sacred Monster, ${ph.caption}`, eager: true })}${ph.note ? `<figcaption>${rich(ph.note)}</figcaption>` : ''}</figure>
+  <nav class="page-nav">${nav}</nav>
+</main>`,
+  });
+}
+
 const out = {
   [FILES.home]: home(),
   [FILES['sacred-monster']]: sacredMonster(),
@@ -207,8 +230,11 @@ const out = {
   [FILES.portfolio]: portfolio(),
 };
 for (const w of works) out[w.file] = workPage(w);
+storyPhotos.forEach((ph, i) => { out[ph.file] = storyPhotoPage(ph, i); });
 
-fs.rmSync(path.join(ROOT, 'works'), { recursive: true, force: true });
-fs.mkdirSync(path.join(ROOT, 'works'));
+for (const dir of ['works', 'story']) {
+  fs.rmSync(path.join(ROOT, dir), { recursive: true, force: true });
+  fs.mkdirSync(path.join(ROOT, dir));
+}
 for (const [file, html] of Object.entries(out)) fs.writeFileSync(path.join(ROOT, file), html);
 console.log(`Built ${Object.keys(out).length} pages.`);

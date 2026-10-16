@@ -7,7 +7,7 @@ Website for Szaja Gottlieb's sculpture, rebuilt as plain HTML and CSS from the o
 - `content/site.json` holds all text, captions and the list of works. Edit this file to change the site.
 - `css/style.css` is the one stylesheet for every page.
 - `images/` contains the full-size images (up to 2400px). `images/thumbs/` has the smaller versions used on the Portfolio page.
-- `build.js` turns `site.json` into the HTML pages: `index.html`, `sacred-monster.html`, `story.html`, `portfolio.html` and `works/*.html`.
+- `build.js` turns `site.json` into the HTML pages: `index.html`, `sacred-monster.html`, `story.html`, `portfolio.html`, `works/*.html` and `story/*.html` (one page per photo on the story page).
 - `content/CONTENT.md` and `content/reference/` hold the original Wix content and screenshots, kept for reference.
 
 ## Making changes
@@ -30,7 +30,7 @@ The Portfolio page and the work's own page are both generated from that entry. C
 
 ## Hosting
 
-The site is published with GitHub Pages at https://szajagottlieb.com. `.github/workflows/pages.yml` rebuilds and publishes it on every push to `main`, usually within a minute or two. It deploys only the website files: the pages, `css/`, `images/` and `CNAME`.
+The site is published with GitHub Pages at https://szajagottlieb.com. `.github/workflows/pages.yml` rebuilds and publishes it on every push to `main`, usually within a minute or two. It deploys only the website files: the pages, `works/`, `story/`, `css/`, `images/` and `CNAME`.
 
 How it's set up:
 

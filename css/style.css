@@ -189,6 +189,15 @@ body.home { background: var(--ink); color: var(--paper); }
 
 .press p { margin: 16px 0 0; font-size: 19px; }
 
+/* Story photo pages */
+
+.photo-page { text-align: center; }
+.photo-page figure img { width: auto; max-height: max(300px, calc(100svh - 250px)); margin: 0 auto; }
+.photo-page .page-nav .button { margin: 4px; }
+.photo-page figcaption { margin-top: 8px; font-size: 19px; font-style: italic; }
+.photo-page figure:has(figcaption) img { max-height: max(300px, calc(100svh - 290px)); }
+.photo-grid a:hover img, .photo-grid a:focus-visible img { opacity: 0.85; }
+
 /* Work detail pages */
 
 .work-page { text-align: center; }
@@ -212,6 +221,7 @@ body.home { background: var(--ink); color: var(--paper); }
   .story-text { font-size: 19px; }
   .closing { font-size: min(16px, calc((100vw - 32px) / 28)); }
   .closing span { display: block; }
+  .photo-page .page-nav .button { min-width: 0; padding: 10px 18px; }
   .works-grid { grid-template-columns: repeat(2, 1fr); gap: 28px 16px; }
   .work > a, .work > img { height: auto; }
   .work img { max-height: none; width: 100%; }
