@@ -608,15 +608,15 @@
     },
     "off-the-wall-i": {
       "file": "images/off-the-wall-i.jpg",
-      "width": 1893,
-      "height": 2400,
-      "wix_original": "https://static.wixstatic.com/media/04a26e_777206fcaa2a4fb09533f737ab67bc19~mv2.jpg"
-    },
-    "off-the-wall-ii": {
-      "file": "images/off-the-wall-ii.jpg",
       "width": 1912,
       "height": 2400,
       "wix_original": "https://static.wixstatic.com/media/04a26e_36c659afd6bb4e1aa07e7aa02811b78e~mv2.jpg"
+    },
+    "off-the-wall-ii": {
+      "file": "images/off-the-wall-ii.jpg",
+      "width": 1893,
+      "height": 2400,
+      "wix_original": "https://static.wixstatic.com/media/04a26e_777206fcaa2a4fb09533f737ab67bc19~mv2.jpg"
     },
     "wall-installation-art-city-ventura": {
       "file": "images/wall-installation-art-city-ventura.jpg",
