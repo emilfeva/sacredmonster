@@ -146,6 +146,7 @@ function story() {
   <article class="story-text">
     ${p.paragraphs.map(t => `<p>${rich(t)}</p>`).join('\n    ')}
     <p class="dedication">${rich(p.dedication)}</p>
+    ${p.practice ? `<p class="practice">${rich(p.practice)}</p>` : ''}
   </article>
   <nav class="page-nav">${p.links.map(l => link(l)).join(' ')}</nav>
 </main>`,

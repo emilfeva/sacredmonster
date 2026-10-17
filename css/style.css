@@ -164,6 +164,7 @@ body.home { background: var(--ink); color: var(--paper); }
 .story-header .epigraph { font-size: 21px; font-style: italic; margin: -8px 0 0; }
 .story-text p + p { margin-top: 0.7em; }
 .story-text a { color: inherit; }
+.story-text .practice { font-size: 19px; margin-top: 1em; }
 .story-text .dedication { font-size: 19px; font-style: italic; margin-top: 1.2em; }
 
 /* Portfolio */
