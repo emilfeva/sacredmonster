@@ -30,7 +30,7 @@ The Portfolio page and the work's own page are both generated from that entry. C
 
 ## Hosting
 
-The site is published with GitHub Pages at https://szajagottlieb.com. `.github/workflows/pages.yml` rebuilds and publishes it on every push to `main`, usually within a minute or two. It deploys only the website files: the pages, `works/`, `story/`, `css/`, `images/` and `CNAME`.
+The site is published with GitHub Pages at https://szajagottlieb.com. `.github/workflows/pages.yml` rebuilds and publishes it on every push to `main`, usually within a minute or two. It deploys only the website files: the pages, `works/`, `story/`, `css/`, `images/`, `favicon.ico` (the browser-tab icon, a small Sacred Monster) and `CNAME`.
 
 How it's set up:
 

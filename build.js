@@ -67,6 +67,9 @@ function layout({ title, body, file, prefix = '', bodyClass = '', footer = false
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
 <link rel="stylesheet" href="${prefix}css/style.css?v=${CSS_VERSION}">
+<link rel="icon" href="${prefix}favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="${prefix}images/favicon-32.png">
+<link rel="apple-touch-icon" href="${prefix}images/apple-touch-icon.png">
 </head>
 <body${bodyClass ? ` class="${bodyClass}"` : ''}>
 ${body}

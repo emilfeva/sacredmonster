@@ -32,7 +32,7 @@ jobs:
       - name: Collect site files
         run: |
           mkdir _site
-          cp -r index.html sacred-monster.html story.html portfolio.html works story css images CNAME _site/
+          cp -r index.html sacred-monster.html story.html portfolio.html works story css images favicon.ico CNAME _site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
