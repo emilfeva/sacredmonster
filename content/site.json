@@ -62,7 +62,7 @@
         "*Sacred Monster* marks Szaja Gottlieb’s re-emergence as a sculptor.",
         "In progress: IRONY, an homage to Marcel Duchamp."
       ],
-      "attribution": "sz-monogram"
+      "attribution": "— SZ"
     },
     {
       "id": "story",
@@ -629,11 +629,6 @@
       "width": 519,
       "height": 641,
       "wix_original": "https://static.wixstatic.com/media/04a26e_5e6c3b846a674da0b8ff9ac280b314db~mv2.jpg"
-    },
-    "sz-monogram": {
-      "file": "images/sz-monogram.png",
-      "width": 77,
-      "height": 99
     },
     "tower": {
       "file": "images/tower.jpg",
