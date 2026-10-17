@@ -348,13 +348,12 @@
               "title": "Installation of Wall (at Art City, Ventura)",
               "details": "Sandstone, wood, nails, wire | 10 × 5 × 3'",
               "image": "wall-installation-art-city-ventura",
-              "wix_detail_page": "about-7",
-              "note": "Wix page title says 'ShyOnTop'."
+              "wix_detail_page": "about-7"
             },
             {
               "title": "Santa Barbara Installation, 1995",
               "details": "Sandstone, wood, nails, wire | 52\" × 3' × 3'",
-              "note": "In memoriam of Leah Gottlieb Sattin",
+              "dedication": "In memoriam of Leah Gottlieb Sattin",
               "image": "santa-barbara-installation",
               "wix_detail_page": "santa-barbara-installation"
             }
