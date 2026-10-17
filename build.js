@@ -159,7 +159,7 @@ const detailLines = d => d.split(' | ').map(esc);
 function workCard(w) {
   const caption = w.title ? `<figcaption>
           <span class="work-title">${rich(w.title)}</span>
-          ${detailLines(w.details).map(t => `<span>${t}</span>`).join('\n          ')}${w.collection ? `\n          <span>(${esc(w.collection)})</span>` : ''}
+          ${w.details ? detailLines(w.details).map(t => `<span>${t}</span>`).join('\n          ') : ''}${w.note ? `\n          <span>${rich(w.note)}</span>` : ''}${w.collection ? `\n          <span>(${esc(w.collection)})</span>` : ''}
         </figcaption>` : '';
   const picture = img(w.image, { thumb: true, alt: w.title ? plain(w.title) : 'Untitled work' });
   return `<figure class="work" id="${w.image}">
@@ -201,7 +201,7 @@ function workPage(w) {
   <div class="work-images">
     ${images.map((n, i) => `<a href="${prefix}${FILES.portfolio}#${w.image}">${img(n, { prefix, alt: plain(w.title), eager: i === 0 })}</a>`).join('\n    ')}
   </div>
-  <p class="work-details">${detailLines(w.details).join('<br>')}${w.collection ? `<br>(${esc(w.collection)})` : ''}</p>
+  <p class="work-details">${[...(w.details ? detailLines(w.details) : []), ...(w.note ? [rich(w.note)] : [])].join('<br>')}${w.collection ? `<br>(${esc(w.collection)})` : ''}</p>
 </main>`,
   });
 }
