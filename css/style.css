@@ -188,7 +188,7 @@ body.home { background: var(--ink); color: var(--paper); }
 .work figcaption { margin-top: 4px; font-size: 14px; line-height: 1.25; }
 .work figcaption span { display: block; }
 
-.press p { margin: 16px 0 0; font-size: 19px; }
+.press p { margin: 4px 0 0; font-size: 19px; }
 
 /* Story photo pages */
 
