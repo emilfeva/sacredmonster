@@ -180,6 +180,8 @@ body.home { background: var(--ink); color: var(--paper); }
   grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
   gap: 36px 28px;
   align-items: start;
+  /* Every row as tall as the tallest, so rows are evenly spaced whatever the caption lengths. */
+  grid-auto-rows: 1fr;
 }
 /* Fixed-height image box, bottom-aligned, so captions in a row line up. */
 .work > a, .work > img { display: flex; align-items: flex-end; height: 210px; }
