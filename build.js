@@ -123,7 +123,7 @@ function sacredMonster() {
       ${p.facts.map(f => `<li>${esc(f)}</li>`).join('\n      ')}
     </ul>
   </div>
-  ${p.closing ? `<p class="closing">${p.closing.map(t => `<span>${rich(t)}</span>`).join(' ')}</p>` : ''}
+  ${p.closing ? `<div class="closing">${p.closing.map(t => `<p>${rich(t)}</p>`).join('')}</div>` : ''}
   <nav class="page-nav">${p.links.map(l => link(l)).join(' ')}</nav>
 </main>`,
   });

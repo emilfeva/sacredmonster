@@ -143,8 +143,8 @@ body.home { background: var(--ink); color: var(--paper); }
 
 .facts { width: fit-content; margin: 0 auto; padding-left: 1.2em; font-size: 17px; }
 
-/* One line on wider screens: the font shrinks with the window to keep it there. */
-.closing { margin: 32px 0 0; font-size: min(20px, calc((100vw - 32px) / 47)); text-align: center; white-space: nowrap; }
+.closing { max-width: 760px; margin: 32px auto 0; font-size: 19px; }
+.closing p { margin: 0; }
 
 /* Story */
 
@@ -222,8 +222,7 @@ body.home { background: var(--ink); color: var(--paper); }
   .facts { grid-column: 1 / -1; order: -1; }
   .photo-grid { grid-template-columns: repeat(2, 1fr); gap: 24px 16px; }
   .story-text { font-size: 19px; }
-  .closing { font-size: min(16px, calc((100vw - 32px) / 28)); }
-  .closing span { display: block; }
+  .closing { font-size: 17px; }
   .photo-page .page-nav .button { min-width: 0; padding: 10px 18px; }
   .portfolio h1 { margin-bottom: 28px; }
   .series + .series { margin-top: 48px; }
